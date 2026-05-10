@@ -13,7 +13,7 @@
       "estimated_sales": 9,
       "estimated_revenue": 23750,
       "priority": 1,
-      "deadline": "2026-05-13T14:37:30.384457",
+      "deadline": "2026-05-13T14:49:49.180643",
       "status": "planned"
     },
     {
@@ -29,7 +29,7 @@
       "estimated_sales": 9,
       "estimated_revenue": 32200,
       "priority": 2,
-      "deadline": "2026-05-13T14:37:30.384497",
+      "deadline": "2026-05-13T14:49:49.180672",
       "status": "planned"
     },
     {
@@ -45,7 +45,7 @@
       "estimated_sales": 8,
       "estimated_revenue": 17600,
       "priority": 3,
-      "deadline": "2026-05-13T14:37:30.384503",
+      "deadline": "2026-05-13T14:49:49.180677",
       "status": "planned"
     },
     {
@@ -61,7 +61,7 @@
       "estimated_sales": 8,
       "estimated_revenue": 8800,
       "priority": 4,
-      "deadline": "2026-05-13T14:37:30.384508",
+      "deadline": "2026-05-13T14:49:49.180680",
       "status": "planned"
     },
     {
@@ -77,10 +77,10 @@
       "estimated_sales": 8,
       "estimated_revenue": 25500,
       "priority": 5,
-      "deadline": "2026-05-13T14:37:30.384512",
+      "deadline": "2026-05-13T14:49:49.180683",
       "status": "planned"
     }
   ],
   "total_planned_revenue": 107850,
-  "planned_at": "2026-05-10T14:37:30.384590"
+  "planned_at": "2026-05-10T14:49:49.180742"
 }

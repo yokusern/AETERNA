@@ -1,0 +1,185 @@
+{
+  "templates": [
+    {
+      "id": "template_001",
+      "name": "営業管理テンプレート（Excel）",
+      "category": "営業管理",
+      "format": "Excel",
+      "price": 1980,
+      "estimated_sales": 50,
+      "estimated_revenue": 99000,
+      "features": [
+        "顧客管理",
+        "営業進捗管理",
+        "売上予測",
+        "レポート自動生成"
+      ],
+      "target_audience": "営業チーム、営業マネージャー",
+      "implementation_time": "3日",
+      "difficulty": "low"
+    },
+    {
+      "id": "template_002",
+      "name": "プロジェクト管理テンプレート（Google Sheets）",
+      "category": "プロジェクト管理",
+      "format": "Google Sheets",
+      "price": 1480,
+      "estimated_sales": 60,
+      "estimated_revenue": 88800,
+      "features": [
+        "タスク管理",
+        "進捗管理",
+        "リソース配分",
+        "ガントチャート自動生成"
+      ],
+      "target_audience": "プロジェクトマネージャー、チームリーダー",
+      "implementation_time": "2日",
+      "difficulty": "low"
+    },
+    {
+      "id": "template_003",
+      "name": "顧客管理テンプレート（Notion）",
+      "category": "顧客管理",
+      "format": "Notion",
+      "price": 980,
+      "estimated_sales": 100,
+      "estimated_revenue": 98000,
+      "features": [
+        "顧客情報管理",
+        "取引履歴",
+        "連絡先管理",
+        "フォローアップ管理"
+      ],
+      "target_audience": "営業、カスタマーサポート",
+      "implementation_time": "2日",
+      "difficulty": "low"
+    },
+    {
+      "id": "template_004",
+      "name": "予算管理テンプレート（Excel）",
+      "category": "財務管理",
+      "format": "Excel",
+      "price": 2480,
+      "estimated_sales": 40,
+      "estimated_revenue": 99200,
+      "features": [
+        "予算計画",
+        "支出管理",
+        "差異分析",
+        "レポート自動生成"
+      ],
+      "target_audience": "財務担当者、経営層",
+      "implementation_time": "4日",
+      "difficulty": "medium"
+    },
+    {
+      "id": "template_005",
+      "name": "データ分析テンプレート（Google Sheets）",
+      "category": "データ分析",
+      "format": "Google Sheets",
+      "price": 1980,
+      "estimated_sales": 70,
+      "estimated_revenue": 138600,
+      "features": [
+        "データ入力フォーム",
+        "自動グラフ生成",
+        "統計分析",
+        "ダッシュボード"
+      ],
+      "target_audience": "データアナリスト、マーケター",
+      "implementation_time": "3日",
+      "difficulty": "medium"
+    },
+    {
+      "id": "template_006",
+      "name": "SNS投稿スケジュール管理（Notion）",
+      "category": "マーケティング",
+      "format": "Notion",
+      "price": 1480,
+      "estimated_sales": 80,
+      "estimated_revenue": 118400,
+      "features": [
+        "投稿スケジュール管理",
+        "コンテンツカレンダー",
+        "パフォーマンス追跡",
+        "チーム共有機能"
+      ],
+      "target_audience": "マーケター、SNS運用者",
+      "implementation_time": "2日",
+      "difficulty": "low"
+    },
+    {
+      "id": "template_007",
+      "name": "Google Apps Script - メール自動送信ツール",
+      "category": "業務自動化",
+      "format": "Google Apps Script",
+      "price": 1980,
+      "estimated_sales": 100,
+      "estimated_revenue": 198000,
+      "features": [
+        "条件付きメール自動送信",
+        "スケジュール配信",
+        "テンプレート管理",
+        "ログ記録"
+      ],
+      "target_audience": "Google Workspace ユーザー",
+      "implementation_time": "3日",
+      "difficulty": "medium"
+    },
+    {
+      "id": "template_008",
+      "name": "Google Apps Script - データ自動集計ツール",
+      "category": "業務自動化",
+      "format": "Google Apps Script",
+      "price": 2480,
+      "estimated_sales": 60,
+      "estimated_revenue": 148800,
+      "features": [
+        "複数シート自動集計",
+        "レポート自動生成",
+        "エラーチェック",
+        "スケジュール実行"
+      ],
+      "target_audience": "Google Workspace ユーザー",
+      "implementation_time": "4日",
+      "difficulty": "medium"
+    },
+    {
+      "id": "template_009",
+      "name": "面接評価テンプレート（Excel）",
+      "category": "採用管理",
+      "format": "Excel",
+      "price": 1480,
+      "estimated_sales": 50,
+      "estimated_revenue": 74000,
+      "features": [
+        "面接スコアリング",
+        "候補者比較",
+        "評価レポート",
+        "合格判定自動化"
+      ],
+      "target_audience": "採用担当者、HR",
+      "implementation_time": "2日",
+      "difficulty": "low"
+    },
+    {
+      "id": "template_010",
+      "name": "コンテンツカレンダー＆分析テンプレート（Google Sheets）",
+      "category": "コンテンツ管理",
+      "format": "Google Sheets",
+      "price": 1980,
+      "estimated_sales": 90,
+      "estimated_revenue": 178200,
+      "features": [
+        "コンテンツ企画",
+        "公開スケジュール",
+        "パフォーマンス分析",
+        "改善提案自動生成"
+      ],
+      "target_audience": "コンテンツマーケター、ブロガー",
+      "implementation_time": "3日",
+      "difficulty": "medium"
+    }
+  ],
+  "generated_at": "2026-05-10T14:49:49.252440"
+}

@@ -1,0 +1,51 @@
+{
+  "execution_date": "2026-05-10T14:49:49.116217",
+  "agents": [
+    {
+      "name": "市場分析エージェント",
+      "script": "market_analyzer.py",
+      "status": "success",
+      "timestamp": "2026-05-10T14:49:49.147328"
+    },
+    {
+      "name": "コンテンツ企画エージェント",
+      "script": "content_planner.py",
+      "status": "success",
+      "timestamp": "2026-05-10T14:49:49.186308"
+    },
+    {
+      "name": "高単価化エージェント",
+      "script": "high_price_agent.py",
+      "status": "success",
+      "timestamp": "2026-05-10T14:49:49.225987"
+    },
+    {
+      "name": "テンプレート・ツール制作エージェント",
+      "script": "template_creator.py",
+      "status": "success",
+      "timestamp": "2026-05-10T14:49:49.258174"
+    },
+    {
+      "name": "ビジネスモデル設計エージェント",
+      "script": "business_model_agent.py",
+      "status": "success",
+      "timestamp": "2026-05-10T14:49:49.291120"
+    },
+    {
+      "name": "コース・プログラム企画エージェント",
+      "script": "course_planner.py",
+      "status": "success",
+      "timestamp": "2026-05-10T14:49:49.324173"
+    },
+    {
+      "name": "統合調整エージェント",
+      "script": "integration_coordinator.py",
+      "status": "success",
+      "timestamp": "2026-05-10T14:49:49.360944"
+    }
+  ],
+  "total_agents": 7,
+  "successful_agents": 7,
+  "failed_agents": 0,
+  "total_execution_time": 0.24473
+}

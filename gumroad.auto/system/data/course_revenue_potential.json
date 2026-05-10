@@ -1,0 +1,20 @@
+{
+  "potential": {
+    "total_monthly_revenue": 2789000,
+    "courses_count": 5,
+    "average_per_course": 557800.0,
+    "breakdown_by_level": {
+      "初心者→中級者": 1826000,
+      "初心者→上級者": 620000,
+      "初心者": 343000
+    },
+    "breakdown_by_duration": {
+      "3ヶ月": 594000,
+      "4ヶ月": 620000,
+      "6週間": 592000,
+      "4週間": 640000,
+      "3週間": 343000
+    }
+  },
+  "generated_at": "2026-05-10T14:49:49.318901"
+}

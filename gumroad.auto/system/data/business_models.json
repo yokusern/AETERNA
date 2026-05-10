@@ -1,0 +1,138 @@
+{
+  "models": [
+    {
+      "id": "biz_001",
+      "model_type": "サブスクリプション",
+      "name": "データ分析スキル向上サブスク（月額）",
+      "description": "毎月新しいデータ分析テクニック、テンプレート、ケーススタディを配信",
+      "monthly_price": 2980,
+      "estimated_subscribers": 100,
+      "estimated_monthly_revenue": 298000,
+      "churn_rate": 0.05,
+      "estimated_stable_revenue": 283100,
+      "content_includes": [
+        "毎週のデータ分析テクニック動画",
+        "実用的なテンプレート（毎月3個）",
+        "ケーススタディ（毎月2個）",
+        "質問サポート（Slack）",
+        "月1回のライブセッション"
+      ],
+      "target_audience": "データ分析を学びたい全ての人",
+      "implementation_time": "2週間",
+      "difficulty": "medium",
+      "priority": "high"
+    },
+    {
+      "id": "biz_002",
+      "model_type": "会員制コミュニティ",
+      "name": "エンジニア向けコミュニティ（月額）",
+      "description": "エンジニア同士の知識共有、案件紹介、キャリア相談ができるコミュニティ",
+      "monthly_price": 4980,
+      "estimated_members": 50,
+      "estimated_monthly_revenue": 249000,
+      "churn_rate": 0.08,
+      "estimated_stable_revenue": 229080,
+      "content_includes": [
+        "Slack コミュニティアクセス",
+        "月1回のオンラインイベント",
+        "案件紹介サービス",
+        "キャリア相談（月1回）",
+        "プレミアムコンテンツアクセス"
+      ],
+      "target_audience": "キャリアアップを目指すエンジニア",
+      "implementation_time": "3週間",
+      "difficulty": "high",
+      "priority": "high"
+    },
+    {
+      "id": "biz_003",
+      "model_type": "マスタークラス（年額）",
+      "name": "Python マスタークラス（年額）",
+      "description": "年間を通じた包括的なPython学習プログラム + 個別メンタリング",
+      "yearly_price": 49800,
+      "estimated_members": 30,
+      "estimated_yearly_revenue": 1494000,
+      "estimated_monthly_revenue": 124500,
+      "churn_rate": 0.1,
+      "estimated_stable_revenue": 112050,
+      "content_includes": [
+        "12ヶ月のカリキュラム",
+        "毎週のライブレッスン",
+        "個別メンタリング（月1回）",
+        "プロジェクト実装サポート",
+        "就職・転職支援"
+      ],
+      "target_audience": "Python を本気で習得したい人",
+      "implementation_time": "1ヶ月",
+      "difficulty": "high",
+      "priority": "medium"
+    },
+    {
+      "id": "biz_004",
+      "model_type": "アフィリエイト",
+      "name": "Gumroad コンテンツアフィリエイト",
+      "description": "他のクリエイターのコンテンツを紹介し、売上の一部を得る",
+      "commission_rate": 0.3,
+      "estimated_monthly_referred_sales": 500000,
+      "estimated_monthly_revenue": 150000,
+      "churn_rate": 0.0,
+      "estimated_stable_revenue": 150000,
+      "content_includes": [
+        "キュレーションされたコンテンツリスト",
+        "紹介ページ",
+        "メールニュースレター",
+        "SNS 投稿"
+      ],
+      "target_audience": "Gumroad ユーザー全般",
+      "implementation_time": "1週間",
+      "difficulty": "low",
+      "priority": "high"
+    },
+    {
+      "id": "biz_005",
+      "model_type": "スポンサーシップ",
+      "name": "企業スポンサーシップ",
+      "description": "コンテンツ内での企業広告、スポンサー記事掲載",
+      "monthly_price": 50000,
+      "estimated_sponsors": 3,
+      "estimated_monthly_revenue": 150000,
+      "churn_rate": 0.1,
+      "estimated_stable_revenue": 135000,
+      "content_includes": [
+        "ニュースレター内の広告枠",
+        "スポンサー記事（月1回）",
+        "SNS での紹介",
+        "コンテンツ内での製品紹介"
+      ],
+      "target_audience": "SaaS 企業、ツール企業",
+      "implementation_time": "2週間",
+      "difficulty": "medium",
+      "priority": "medium"
+    },
+    {
+      "id": "biz_006",
+      "model_type": "ティアード価格設定",
+      "name": "コンテンツティアード販売",
+      "description": "同じコンテンツを複数の価格レベルで提供（ベーシック、プロ、エンタープライズ）",
+      "basic_price": 1980,
+      "pro_price": 4980,
+      "enterprise_price": 9980,
+      "estimated_basic_sales": 200,
+      "estimated_pro_sales": 50,
+      "estimated_enterprise_sales": 10,
+      "estimated_monthly_revenue": 594400,
+      "churn_rate": 0.0,
+      "estimated_stable_revenue": 594400,
+      "content_includes": [
+        "ベーシック: 基本コンテンツ",
+        "プロ: 基本 + テンプレート + サポート",
+        "エンタープライズ: 全て + カスタマイズ + 優先サポート"
+      ],
+      "target_audience": "全ての顧客層",
+      "implementation_time": "1週間",
+      "difficulty": "low",
+      "priority": "high"
+    }
+  ],
+  "generated_at": "2026-05-10T14:49:49.285156"
+}

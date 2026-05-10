@@ -1,0 +1,16 @@
+{
+  "potential": {
+    "total_monthly_revenue": 1475800,
+    "average_per_product": 245966.66666666666,
+    "products_count": 6,
+    "breakdown": {
+      "courses": 490000,
+      "consulting": 100000,
+      "templates": 199200,
+      "scripts": 238800,
+      "guides": 209400,
+      "tools": 238400
+    }
+  },
+  "generated_at": "2026-05-10T14:49:49.219599"
+}

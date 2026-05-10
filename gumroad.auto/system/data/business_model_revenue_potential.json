@@ -1,0 +1,40 @@
+{
+  "potential": {
+    "total_monthly_revenue": 1565900,
+    "total_stable_revenue": 1503630,
+    "models_count": 6,
+    "breakdown_by_type": {
+      "サブスクリプション": {
+        "revenue": 298000,
+        "stable_revenue": 283100,
+        "count": 1
+      },
+      "会員制コミュニティ": {
+        "revenue": 249000,
+        "stable_revenue": 229080,
+        "count": 1
+      },
+      "マスタークラス（年額）": {
+        "revenue": 124500,
+        "stable_revenue": 112050,
+        "count": 1
+      },
+      "アフィリエイト": {
+        "revenue": 150000,
+        "stable_revenue": 150000,
+        "count": 1
+      },
+      "スポンサーシップ": {
+        "revenue": 150000,
+        "stable_revenue": 135000,
+        "count": 1
+      },
+      "ティアード価格設定": {
+        "revenue": 594400,
+        "stable_revenue": 594400,
+        "count": 1
+      }
+    }
+  },
+  "generated_at": "2026-05-10T14:49:49.286074"
+}

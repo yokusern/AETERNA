@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-05-10T14:49:49.361371",
+  "execution_summary": {
+    "total_agents": 7,
+    "successful_agents": 7,
+    "failed_agents": 0,
+    "success_rate": "100.0%",
+    "total_execution_time_seconds": 0.24473
+  },
+  "revenue_potential": {
+    "high_price_products": "¥1,475,800",
+    "templates_tools": "¥1,241,000",
+    "business_models": "¥1,565,900",
+    "courses_programs": "¥2,789,000",
+    "total_monthly_potential": "¥7,071,700"
+  },
+  "key_metrics": {
+    "average_revenue_per_agent": "¥1,010,243",
+    "total_products_services": "27+",
+    "business_models_count": 6,
+    "courses_programs_count": 5
+  },
+  "next_actions": [
+    "高単価商品の実装を開始（Python講座、コンサルティング）",
+    "テンプレート・ツール制作を並列実行（Google Apps Script優先）",
+    "ビジネスモデル実装を段階的に進める（サブスク、アフィリエイト優先）",
+    "コース・プログラムの企画を確定（営業・マーケティング効率化コース優先）",
+    "Gumroad内でのマーケティング・SEO対策を強化"
+  ],
+  "risk_assessment": {
+    "implementation_speed": "medium",
+    "market_demand": "high",
+    "resource_availability": "high",
+    "competition": "medium"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "today": {
+    "date": "2026-05-10",
+    "focus_area": "高単価商品の企画と実装",
+    "tasks": [
+      {
+        "type": "high_price_product",
+        "name": "Python実践プログラミング集中講座",
+        "priority": "high",
+        "estimated_revenue": 490000,
+        "deadline": "2026-05-20",
+        "difficulty": "medium"
+      },
+      {
+        "type": "high_price_product",
+        "name": "業務自動化Pythonスクリプト集（10個）",
+        "priority": "high",
+        "estimated_revenue": 238800,
+        "deadline": "2026-05-20",
+        "difficulty": "medium"
+      },
+      {
+        "type": "high_price_product",
+        "name": "Google Sheets 自動化ツール（業務効率化）",
+        "priority": "high",
+        "estimated_revenue": 238400,
+        "deadline": "2026-05-20",
+        "difficulty": "low"
+      },
+      {
+        "type": "template_creation",
+        "name": "Google Apps Script - メール自動送信ツール",
+        "priority": "high",
+        "estimated_revenue": 198000,
+        "deadline": "3日",
+        "difficulty": "medium"
+      },
+      {
+        "type": "template_creation",
+        "name": "コンテンツカレンダー＆分析テンプレート（Google Sheets）",
+        "priority": "high",
+        "estimated_revenue": 178200,
+        "deadline": "3日",
+        "difficulty": "medium"
+      },
+      {
+        "type": "business_model",
+        "name": "Gumroad コンテンツアフィリエイト",
+        "priority": "medium",
+        "estimated_revenue": 150000,
+        "deadline": "1週間",
+        "difficulty": "low"
+      },
+      {
+        "type": "business_model",
+        "name": "コンテンツティアード販売",
+        "priority": "medium",
+        "estimated_revenue": 594400,
+        "deadline": "1週間",
+        "difficulty": "low"
+      },
+      {
+        "type": "course_planning",
+        "name": "営業・マーケティング効率化コース",
+        "priority": "medium",
+        "estimated_revenue": 640000,
+        "deadline": "2週間",
+        "difficulty": "low"
+      }
+    ]
+  }
+}

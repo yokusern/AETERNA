@@ -1,0 +1,25 @@
+{
+  "potential": {
+    "total_monthly_revenue": 1241000,
+    "templates_count": 10,
+    "average_per_template": 124100.0,
+    "breakdown_by_category": {
+      "営業管理": 99000,
+      "プロジェクト管理": 88800,
+      "顧客管理": 98000,
+      "財務管理": 99200,
+      "データ分析": 138600,
+      "マーケティング": 118400,
+      "業務自動化": 346800,
+      "採用管理": 74000,
+      "コンテンツ管理": 178200
+    },
+    "breakdown_by_format": {
+      "Excel": 272200,
+      "Google Sheets": 405600,
+      "Notion": 216400,
+      "Google Apps Script": 346800
+    }
+  },
+  "generated_at": "2026-05-10T14:49:49.253360"
+}
