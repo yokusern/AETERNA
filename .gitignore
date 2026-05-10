@@ -1,0 +1,56 @@
+# Node modules
+node_modules/
+.next/
+dist/
+build/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+agents/logs/
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Build artifacts
+*.bak
+*.tmp
+
+# Affiliate.auto specific
+Affiliate.auto/agents/logs/
+Affiliate.auto/agents/backups/
+Affiliate.auto/production_site/.next/
+Affiliate.auto/production_site/node_modules/
+
+# gumroad.auto specific
+gumroad.auto/agents/logs/
+gumroad.auto/system/.venv/

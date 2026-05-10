@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+data/gear_master.sqlite3
+data/articles/
+data/dashboards/
+data/weekly_reports/
+data/logs/
+data/research/
+data/reports/
+data/instructions/
+data/wp_payloads/
