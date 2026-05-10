@@ -1,0 +1,86 @@
+{
+  "analysis": {
+    "direct_competitors": [
+      {
+        "name": "Udemy",
+        "strengths": [
+          "大規模ユーザーベース",
+          "多数のコース",
+          "認知度"
+        ],
+        "weaknesses": [
+          "品質のばらつき",
+          "サポート不足",
+          "高手数料"
+        ],
+        "market_position": "市場リーダー",
+        "estimated_market_share": "35%"
+      },
+      {
+        "name": "Teachable",
+        "strengths": [
+          "高機能プラットフォーム",
+          "カスタマイズ性",
+          "サポート"
+        ],
+        "weaknesses": [
+          "高コスト",
+          "学習曲線が急",
+          "小規模ユーザーベース"
+        ],
+        "market_position": "プレミアムプレイヤー",
+        "estimated_market_share": "12%"
+      },
+      {
+        "name": "Gumroad（他クリエイター）",
+        "strengths": [
+          "低手数料",
+          "シンプル",
+          "コミュニティ"
+        ],
+        "weaknesses": [
+          "機能制限",
+          "マーケティング支援不足"
+        ],
+        "market_position": "競争相手",
+        "estimated_market_share": "8%"
+      }
+    ],
+    "swot_analysis": {
+      "strengths": [
+        "低価格・高品質な商品",
+        "自動化による効率性",
+        "Gumroad内での最適化",
+        "多様な商品ラインアップ",
+        "継続的な改善能力"
+      ],
+      "weaknesses": [
+        "ブランド認知度が低い",
+        "マーケティング予算が限定的",
+        "プラットフォーム依存",
+        "サポート体制が限定的"
+      ],
+      "opportunities": [
+        "AI・自動化ツール市場の急成長",
+        "データ分析教育市場の拡大",
+        "起業家向けツール市場の成長",
+        "国際市場への展開",
+        "他プラットフォームへの展開"
+      ],
+      "threats": [
+        "大手プレイヤーの参入",
+        "プラットフォーム規約の変更",
+        "競合他社の価格競争",
+        "経済不況による需要減",
+        "技術トレンドの急速な変化"
+      ]
+    },
+    "market_positioning": {
+      "target_segment": "予算限定的な個人学習者、起業家、フリーランス",
+      "unique_value_proposition": "高品質・低価格・自動化による継続的改善",
+      "competitive_advantage": "AI自動化による効率性、多様な商品ラインアップ",
+      "differentiation_strategy": "品質 × 価格 × 多様性"
+    }
+  },
+  "generated_at": "2026-05-10T14:58:32.535245"
+}

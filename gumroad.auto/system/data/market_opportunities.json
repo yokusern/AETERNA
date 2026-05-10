@@ -1,0 +1,54 @@
+{
+  "opportunities": {
+    "high_opportunity": [
+      {
+        "opportunity": "AI・自動化ツール市場への参入",
+        "market_size": "¥500億",
+        "growth_rate": "45%",
+        "our_potential_share": "5%",
+        "potential_revenue": "¥25億",
+        "implementation_difficulty": "低",
+        "timeline": "3ヶ月"
+      },
+      {
+        "opportunity": "データ分析教育市場への拡大",
+        "market_size": "¥300億",
+        "growth_rate": "38%",
+        "our_potential_share": "3%",
+        "potential_revenue": "¥9億",
+        "implementation_difficulty": "中",
+        "timeline": "6ヶ月"
+      },
+      {
+        "opportunity": "企業向けエンタープライズプラン",
+        "market_size": "¥200億",
+        "growth_rate": "25%",
+        "our_potential_share": "2%",
+        "potential_revenue": "¥4億",
+        "implementation_difficulty": "高",
+        "timeline": "9ヶ月"
+      }
+    ],
+    "emerging_opportunities": [
+      {
+        "opportunity": "国際市場への展開",
+        "market_size": "¥5,000億",
+        "growth_rate": "30%",
+        "our_potential_share": "0.5%",
+        "potential_revenue": "¥25億",
+        "implementation_difficulty": "高",
+        "timeline": "12ヶ月"
+      },
+      {
+        "opportunity": "AI・機械学習プラットフォーム構築",
+        "market_size": "¥1,000億",
+        "growth_rate": "50%",
+        "our_potential_share": "1%",
+        "potential_revenue": "¥10億",
+        "implementation_difficulty": "極高",
+        "timeline": "18ヶ月"
+      }
+    ]
+  },
+  "generated_at": "2026-05-10T14:58:32.535919"
+}

@@ -1,0 +1,62 @@
+{
+  "forecast": {
+    "3month_forecast": {
+      "may": {
+        "projected_sales": "¥500,000",
+        "confidence": 0.85,
+        "key_drivers": [
+          "春の需要",
+          "新規顧客"
+        ]
+      },
+      "june": {
+        "projected_sales": "¥650,000",
+        "confidence": 0.8,
+        "key_drivers": [
+          "初夏の需要",
+          "リピート顧客"
+        ]
+      },
+      "july": {
+        "projected_sales": "¥450,000",
+        "confidence": 0.75,
+        "key_drivers": [
+          "夏休み需要低下",
+          "季節性"
+        ]
+      }
+    },
+    "6month_forecast": {
+      "q2": {
+        "projected_sales": "¥1,600,000",
+        "confidence": 0.8
+      },
+      "q3": {
+        "projected_sales": "¥2,500,000",
+        "confidence": 0.75
+      }
+    },
+    "annual_forecast": {
+      "2026": {
+        "projected_sales": "¥12,000,000",
+        "confidence": 0.7
+      },
+      "growth_vs_previous": "300%"
+    },
+    "scenario_analysis": {
+      "optimistic": {
+        "annual_sales": "¥20,000,000",
+        "probability": 0.25
+      },
+      "base_case": {
+        "annual_sales": "¥12,000,000",
+        "probability": 0.5
+      },
+      "pessimistic": {
+        "annual_sales": "¥6,000,000",
+        "probability": 0.25
+      }
+    }
+  },
+  "generated_at": "2026-05-10T14:58:32.535490"
+}

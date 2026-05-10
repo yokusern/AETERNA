@@ -1,0 +1,44 @@
+{
+  "alerts": {
+    "active_alerts": [],
+    "alert_rules": [
+      {
+        "rule_name": "CPU使用率が80%を超える",
+        "threshold": 80,
+        "severity": "🟡 中",
+        "action": "自動スケーリング + 通知"
+      },
+      {
+        "rule_name": "メモリ使用率が85%を超える",
+        "threshold": 85,
+        "severity": "🟡 中",
+        "action": "ガベージコレクション + 通知"
+      },
+      {
+        "rule_name": "エージェント応答時間が5秒を超える",
+        "threshold": 5000,
+        "severity": "🟡 中",
+        "action": "パフォーマンス分析 + 通知"
+      },
+      {
+        "rule_name": "エラー率が1%を超える",
+        "threshold": 1,
+        "severity": "🔴 高",
+        "action": "即時調査 + 通知"
+      },
+      {
+        "rule_name": "データベース接続エラー",
+        "threshold": 1,
+        "severity": "🔴 高",
+        "action": "自動復旧 + 即時通知"
+      }
+    ],
+    "notification_channels": [
+      "システムログ",
+      "ダッシュボード",
+      "メール通知",
+      "Slack通知"
+    ]
+  },
+  "generated_at": "2026-05-10T14:58:32.568633"
+}

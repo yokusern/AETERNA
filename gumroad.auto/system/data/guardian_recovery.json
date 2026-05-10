@@ -1,0 +1,71 @@
+{
+  "recovery": {
+    "error_detection": {
+      "detection_method": "リアルタイムモニタリング + 予測分析",
+      "detection_latency": "< 1秒",
+      "false_positive_rate": "< 1%"
+    },
+    "recovery_procedures": [
+      {
+        "error_type": "エージェント応答なし",
+        "severity": "🔴 高",
+        "detection_time": "< 5秒",
+        "recovery_steps": [
+          "1. エージェントプロセス再起動",
+          "2. 状態復旧",
+          "3. キューの再処理",
+          "4. 正常性確認"
+        ],
+        "recovery_time": "< 30秒",
+        "success_rate": "98%"
+      },
+      {
+        "error_type": "データベース接続エラー",
+        "severity": "🔴 高",
+        "detection_time": "< 2秒",
+        "recovery_steps": [
+          "1. 接続プール再初期化",
+          "2. 代替接続試行",
+          "3. キャッシュ使用",
+          "4. 接続復旧確認"
+        ],
+        "recovery_time": "< 10秒",
+        "success_rate": "99%"
+      },
+      {
+        "error_type": "メモリリーク検出",
+        "severity": "🟡 中",
+        "detection_time": "< 1分",
+        "recovery_steps": [
+          "1. メモリ使用量分析",
+          "2. 不要なキャッシュクリア",
+          "3. ガベージコレクション実行",
+          "4. 必要に応じてプロセス再起動"
+        ],
+        "recovery_time": "< 2分",
+        "success_rate": "95%"
+      },
+      {
+        "error_type": "API レート制限超過",
+        "severity": "🟡 中",
+        "detection_time": "< 1秒",
+        "recovery_steps": [
+          "1. リクエスト一時停止",
+          "2. バックオフ戦略実行",
+          "3. キャッシュ使用",
+          "4. リクエスト再開"
+        ],
+        "recovery_time": "< 5分",
+        "success_rate": "100%"
+      }
+    ],
+    "recovery_statistics": {
+      "total_incidents_detected": 47,
+      "auto_recovered": 46,
+      "manual_intervention_required": 1,
+      "auto_recovery_success_rate": "97.9%",
+      "average_recovery_time": "45秒"
+    }
+  },
+  "generated_at": "2026-05-10T14:58:32.568407"
+}

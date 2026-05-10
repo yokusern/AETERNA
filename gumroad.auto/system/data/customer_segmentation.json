@@ -1,0 +1,69 @@
+{
+  "segments": {
+    "segment_1": {
+      "name": "スキルアップ志向の個人学習者",
+      "size": "40%",
+      "characteristics": [
+        "予算限定的",
+        "品質重視",
+        "継続学習志向"
+      ],
+      "preferred_products": [
+        "コース・プログラム",
+        "テンプレート"
+      ],
+      "estimated_ltv": "¥50,000",
+      "acquisition_cost": "¥5,000",
+      "churn_rate": "0.15"
+    },
+    "segment_2": {
+      "name": "起業家・フリーランス",
+      "size": "35%",
+      "characteristics": [
+        "効率性重視",
+        "実用性重視",
+        "ROI意識高い"
+      ],
+      "preferred_products": [
+        "業務自動化ツール",
+        "テンプレート"
+      ],
+      "estimated_ltv": "¥100,000",
+      "acquisition_cost": "¥8,000",
+      "churn_rate": "0.10"
+    },
+    "segment_3": {
+      "name": "企業・チーム購買",
+      "size": "15%",
+      "characteristics": [
+        "大口購買",
+        "カスタマイズ需要",
+        "サポート重視"
+      ],
+      "preferred_products": [
+        "エンタープライズプラン",
+        "カスタムツール"
+      ],
+      "estimated_ltv": "¥500,000",
+      "acquisition_cost": "¥30,000",
+      "churn_rate": "0.05"
+    },
+    "segment_4": {
+      "name": "アフィリエイター・リセラー",
+      "size": "10%",
+      "characteristics": [
+        "高単価重視",
+        "マージン重視",
+        "スケール志向"
+      ],
+      "preferred_products": [
+        "アフィリエイトプログラム",
+        "リセラープラン"
+      ],
+      "estimated_ltv": "¥1,000,000",
+      "acquisition_cost": "¥50,000",
+      "churn_rate": "0.08"
+    }
+  },
+  "generated_at": "2026-05-10T14:58:32.535693"
+}

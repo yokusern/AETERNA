@@ -1,0 +1,84 @@
+{
+  "trends": {
+    "current_trends": [
+      {
+        "category": "AI・自動化",
+        "trend_name": "業務自動化ツール需要の急増",
+        "growth_rate": 45,
+        "market_size": "¥500億",
+        "forecast_3months": "¥650億",
+        "confidence": 0.92,
+        "related_products": [
+          "Google Apps Script ツール",
+          "Pythonスクリプト集",
+          "業務自動化テンプレート"
+        ],
+        "opportunity_level": "🔴 極高"
+      },
+      {
+        "category": "データ分析",
+        "trend_name": "データリテラシー教育の需要増",
+        "growth_rate": 38,
+        "market_size": "¥300億",
+        "forecast_3months": "¥380億",
+        "confidence": 0.88,
+        "related_products": [
+          "データ分析エキスパートプログラム",
+          "データ分析テンプレート"
+        ],
+        "opportunity_level": "🔴 極高"
+      },
+      {
+        "category": "スキルアップ",
+        "trend_name": "Python学習需要の継続的成長",
+        "growth_rate": 32,
+        "market_size": "¥400億",
+        "forecast_3months": "¥500億",
+        "confidence": 0.85,
+        "related_products": [
+          "Python完全マスターコース",
+          "Pythonスクリプト集"
+        ],
+        "opportunity_level": "🔴 極高"
+      },
+      {
+        "category": "起業家向け",
+        "trend_name": "起業家向けツール・テンプレート需要",
+        "growth_rate": 28,
+        "market_size": "¥200億",
+        "forecast_3months": "¥250億",
+        "confidence": 0.8,
+        "related_products": [
+          "営業管理テンプレート",
+          "プロジェクト管理テンプレート"
+        ],
+        "opportunity_level": "🟡 高"
+      }
+    ],
+    "seasonal_analysis": {
+      "spring": {
+        "demand_multiplier": 1.2,
+        "reason": "新年度スタート、スキルアップ需要"
+      },
+      "summer": {
+        "demand_multiplier": 0.9,
+        "reason": "夏休み、需要低下"
+      },
+      "autumn": {
+        "demand_multiplier": 1.3,
+        "reason": "秋採用、転職活動ピーク"
+      },
+      "winter": {
+        "demand_multiplier": 1.1,
+        "reason": "年末年始、スキルアップ需要"
+      }
+    },
+    "cyclical_patterns": {
+      "monthly_peak": "9月（秋採用ピーク）",
+      "monthly_low": "8月（夏休み）",
+      "weekly_peak": "火曜日～木曜日",
+      "hourly_peak": "20時～22時（仕事終了後）"
+    }
+  },
+  "generated_at": "2026-05-10T14:58:32.534944"
+}

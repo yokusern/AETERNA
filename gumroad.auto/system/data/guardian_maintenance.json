@@ -1,0 +1,51 @@
+{
+  "maintenance": {
+    "risk_assessment": [
+      {
+        "component": "データベース",
+        "risk_level": "🟡 中",
+        "risk_score": 45,
+        "predicted_failure_date": "2026-06-15",
+        "recommended_action": "インデックス最適化、クエリ最適化",
+        "estimated_downtime_if_failed": "2時間",
+        "priority": "高"
+      },
+      {
+        "component": "API レート制限",
+        "risk_level": "🟡 中",
+        "risk_score": 38,
+        "predicted_failure_date": "2026-06-01",
+        "recommended_action": "キャッシング戦略の改善、バッチ処理の最適化",
+        "estimated_downtime_if_failed": "30分",
+        "priority": "中"
+      },
+      {
+        "component": "ストレージ容量",
+        "risk_level": "🟢 低",
+        "risk_score": 20,
+        "predicted_failure_date": "2026-08-01",
+        "recommended_action": "ログアーカイブ、古いデータの削除",
+        "estimated_downtime_if_failed": "なし",
+        "priority": "低"
+      }
+    ],
+    "maintenance_schedule": {
+      "daily_tasks": [
+        "ログファイルローテーション",
+        "バックアップ検証",
+        "パフォーマンス分析"
+      ],
+      "weekly_tasks": [
+        "インデックス最適化",
+        "キャッシュクリア",
+        "セキュリティスキャン"
+      ],
+      "monthly_tasks": [
+        "容量計画レビュー",
+        "アーキテクチャ最適化",
+        "ディザスタリカバリテスト"
+      ]
+    }
+  },
+  "generated_at": "2026-05-10T14:58:32.568286"
+}

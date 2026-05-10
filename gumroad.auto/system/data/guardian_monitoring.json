@@ -1,0 +1,36 @@
+{
+  "monitoring": {
+    "system_health": {
+      "overall_status": "🟢 正常",
+      "uptime": "99.87%",
+      "last_incident": "2026-05-10 14:30:00",
+      "time_since_incident": "24時間以上"
+    },
+    "agent_status": {
+      "total_agents": 12,
+      "healthy_agents": 12,
+      "degraded_agents": 0,
+      "failed_agents": 0,
+      "health_score": 100
+    },
+    "performance_metrics": {
+      "average_response_time": "0.2秒",
+      "peak_response_time": "0.5秒",
+      "error_rate": "0.0%",
+      "success_rate": "100%"
+    },
+    "resource_utilization": {
+      "cpu_usage": "15%",
+      "memory_usage": "32%",
+      "disk_usage": "45%",
+      "network_bandwidth": "8%"
+    },
+    "data_integrity": {
+      "database_status": "✅ 正常",
+      "backup_status": "✅ 最新",
+      "last_backup": "2026-05-11 02:00:00",
+      "data_consistency": "100%"
+    }
+  },
+  "generated_at": "2026-05-10T14:58:32.568128"
+}

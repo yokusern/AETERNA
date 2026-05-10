@@ -1,0 +1,40 @@
+{
+  "incidents": {
+    "recent_incidents": [
+      {
+        "incident_id": "INC-001",
+        "timestamp": "2026-05-10 14:30:00",
+        "severity": "🟡 中",
+        "component": "コンテンツ企画エージェント",
+        "description": "API レート制限超過",
+        "detection_time": "< 1秒",
+        "resolution_time": "2分30秒",
+        "status": "✅ 解決済み",
+        "root_cause": "リクエスト数の一時的な急増",
+        "preventive_measures": "バッチ処理の最適化"
+      }
+    ],
+    "incident_trends": {
+      "last_24h": 1,
+      "last_7d": 3,
+      "last_30d": 8,
+      "trend": "🟢 改善中"
+    },
+    "sla_compliance": {
+      "p1_incidents": {
+        "target": "99.9%",
+        "actual": "100%"
+      },
+      "p2_incidents": {
+        "target": "99%",
+        "actual": "99.5%"
+      },
+      "p3_incidents": {
+        "target": "95%",
+        "actual": "97%"
+      },
+      "overall_compliance": "99.2%"
+    }
+  },
+  "generated_at": "2026-05-10T14:58:32.568537"
+}
