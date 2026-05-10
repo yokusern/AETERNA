@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-05-10T14:37:30.486572",
+  "week_start": "2026-05-04T14:37:30.486595",
+  "week_end": "2026-05-10T14:37:30.486605",
+  "summary": {
+    "total_revenue": 0,
+    "content_count": 5,
+    "avg_rating": 0,
+    "improvement_count": 0
+  },
+  "content_status": [
+    {
+      "id": "idea_001",
+      "theme": "Python初心者向け完全ガイド",
+      "status": "planned",
+      "estimated_revenue": 23750,
+      "deadline": "2026-05-13T14:37:30.384457"
+    },
+    {
+      "id": "idea_002",
+      "theme": "データ分析初心者向け完全ガイド",
+      "status": "planned",
+      "estimated_revenue": 32200,
+      "deadline": "2026-05-13T14:37:30.384497"
+    },
+    {
+      "id": "idea_003",
+      "theme": "JavaScript初心者向け完全ガイド",
+      "status": "planned",
+      "estimated_revenue": 17600,
+      "deadline": "2026-05-13T14:37:30.384503"
+    },
+    {
+      "id": "idea_004",
+      "theme": "副業ガイド初心者向け完全ガイド",
+      "status": "planned",
+      "estimated_revenue": 8800,
+      "deadline": "2026-05-13T14:37:30.384508"
+    },
+    {
+      "id": "idea_005",
+      "theme": "React初心者向け完全ガイド",
+      "status": "planned",
+      "estimated_revenue": 25500,
+      "deadline": "2026-05-13T14:37:30.384512"
+    }
+  ],
+  "top_contents": [],
+  "improvement_actions": [],
+  "next_week_plan": [
+    {
+      "action": "コンテンツ制作開始",
+      "content_id": "idea_001",
+      "theme": "Python初心者向け完全ガイド",
+      "deadline": "2026-05-13T14:37:30.384457",
+      "priority": "high"
+    }
+  ]
+}

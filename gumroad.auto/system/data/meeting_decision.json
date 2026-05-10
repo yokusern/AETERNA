@@ -1,5 +1,5 @@
 {
-  "meeting_date": "2026-05-10T14:36:22.038123",
+  "meeting_date": "2026-05-10T14:37:30.420054",
   "participants": [
     "市場分析エージェント",
     "コンテンツ企画エージェント",
@@ -21,7 +21,7 @@
       "content_id": "idea_001",
       "theme": "Python初心者向け完全ガイド",
       "priority": 1,
-      "deadline": "2026-05-13T14:36:22.008102",
+      "deadline": "2026-05-13T14:37:30.384457",
       "expected_revenue": 23750
     }
   ]

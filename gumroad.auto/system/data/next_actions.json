@@ -1,0 +1,12 @@
+{
+  "next_actions": [
+    {
+      "action": "コンテンツ制作開始",
+      "content_id": "idea_001",
+      "theme": "Python初心者向け完全ガイド",
+      "deadline": "2026-05-13T14:37:30.384457",
+      "priority": "high"
+    }
+  ],
+  "generated_at": "2026-05-10T14:37:30.453258"
+}
