@@ -1,0 +1,148 @@
+{
+  "trending_categories": [
+    {
+      "category": "プログラミング",
+      "subcategory": "Python",
+      "trend_score": 95,
+      "user_demand": "high",
+      "avg_price": 2500,
+      "estimated_monthly_revenue": 23750
+    },
+    {
+      "category": "プログラミング",
+      "subcategory": "データ分析",
+      "trend_score": 92,
+      "user_demand": "high",
+      "avg_price": 3500,
+      "estimated_monthly_revenue": 32200
+    },
+    {
+      "category": "プログラミング",
+      "subcategory": "JavaScript",
+      "trend_score": 88,
+      "user_demand": "high",
+      "avg_price": 2000,
+      "estimated_monthly_revenue": 17600
+    },
+    {
+      "category": "起業・副業",
+      "subcategory": "副業ガイド",
+      "trend_score": 88,
+      "user_demand": "high",
+      "avg_price": 1000,
+      "estimated_monthly_revenue": 8800
+    },
+    {
+      "category": "プログラミング",
+      "subcategory": "React",
+      "trend_score": 85,
+      "user_demand": "high",
+      "avg_price": 3000,
+      "estimated_monthly_revenue": 25500
+    },
+    {
+      "category": "起業・副業",
+      "subcategory": "フリーランス",
+      "trend_score": 85,
+      "user_demand": "high",
+      "avg_price": 1500,
+      "estimated_monthly_revenue": 12750
+    },
+    {
+      "category": "ビジネス・マーケティング",
+      "subcategory": "ライティング",
+      "trend_score": 82,
+      "user_demand": "medium",
+      "avg_price": 1200,
+      "estimated_monthly_revenue": 9840
+    },
+    {
+      "category": "デザイン",
+      "subcategory": "UI/UX",
+      "trend_score": 80,
+      "user_demand": "medium",
+      "avg_price": 2500,
+      "estimated_monthly_revenue": 20000
+    },
+    {
+      "category": "起業・副業",
+      "subcategory": "ビジネスモデル",
+      "trend_score": 80,
+      "user_demand": "medium",
+      "avg_price": 2000,
+      "estimated_monthly_revenue": 16000
+    },
+    {
+      "category": "ビジネス・マーケティング",
+      "subcategory": "SEO",
+      "trend_score": 78,
+      "user_demand": "medium",
+      "avg_price": 1500,
+      "estimated_monthly_revenue": 11700
+    }
+  ],
+  "content_ideas": [
+    {
+      "id": "idea_001",
+      "theme": "Python初心者向け完全ガイド",
+      "category": "プログラミング",
+      "subcategory": "Python",
+      "target_audience": "初心者〜中級者",
+      "estimated_demand": "high",
+      "recommended_price": 2500,
+      "estimated_monthly_sales": 9,
+      "estimated_revenue": 23750,
+      "priority": 1
+    },
+    {
+      "id": "idea_002",
+      "theme": "データ分析初心者向け完全ガイド",
+      "category": "プログラミング",
+      "subcategory": "データ分析",
+      "target_audience": "初心者〜中級者",
+      "estimated_demand": "high",
+      "recommended_price": 3500,
+      "estimated_monthly_sales": 9,
+      "estimated_revenue": 32200,
+      "priority": 2
+    },
+    {
+      "id": "idea_003",
+      "theme": "JavaScript初心者向け完全ガイド",
+      "category": "プログラミング",
+      "subcategory": "JavaScript",
+      "target_audience": "初心者〜中級者",
+      "estimated_demand": "high",
+      "recommended_price": 2000,
+      "estimated_monthly_sales": 8,
+      "estimated_revenue": 17600,
+      "priority": 3
+    },
+    {
+      "id": "idea_004",
+      "theme": "副業ガイド初心者向け完全ガイド",
+      "category": "起業・副業",
+      "subcategory": "副業ガイド",
+      "target_audience": "初心者〜中級者",
+      "estimated_demand": "high",
+      "recommended_price": 1000,
+      "estimated_monthly_sales": 8,
+      "estimated_revenue": 8800,
+      "priority": 4
+    },
+    {
+      "id": "idea_005",
+      "theme": "React初心者向け完全ガイド",
+      "category": "プログラミング",
+      "subcategory": "React",
+      "target_audience": "初心者〜中級者",
+      "estimated_demand": "high",
+      "recommended_price": 3000,
+      "estimated_monthly_sales": 8,
+      "estimated_revenue": 25500,
+      "priority": 5
+    }
+  ],
+  "analyzed_at": "2026-05-10T14:36:21.977461",
+  "total_estimated_revenue": 107850
+}
