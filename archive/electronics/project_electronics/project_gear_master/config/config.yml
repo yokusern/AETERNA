@@ -1,0 +1,67 @@
+system:
+  name: "Project GearMaster"
+  locale_default: "ja-JP"
+  supported_locales:
+    - "ja-JP"
+    - "en-US"
+  electronics_only: true
+  allowed_categories:
+    - Laptop
+    - Tablet
+    - Monitor
+    - Keyboard
+    - Mouse
+    - Audio
+    - Storage
+    - Network
+    - Camera
+    - SmartHome
+    - Peripheral
+
+organization_flow:
+  researcher_output: "data/research/latest_trends.json"
+  analyst_report_output: "data/reports/weekly_report.md"
+  analyst_instruction_output: "data/instructions/rewrite_instructions.json"
+  wp_payload_archive: "data/wp_payloads"
+
+researcher:
+  market: "JP"
+  amazon_domain: "amazon.co.jp"
+  trend_keywords:
+    - "開発用ノートPC"
+    - "4K USB-C モニター"
+    - "Wi-Fi 7 ルーター"
+    - "外付けSSD 2TB"
+  product_seed:
+    - category: Laptop
+      title: "開発用ノートPC"
+      tags: ["laptop", "developer", "electronics"]
+      base_price_yen: 180000
+      demand_score: 91
+      affiliate_priority: "amazon"
+    - category: Monitor
+      title: "27インチ 4K USB-Cモニター"
+      tags: ["monitor", "usb-c", "electronics"]
+      base_price_yen: 58000
+      demand_score: 83
+      affiliate_priority: "rakuten"
+    - category: Network
+      title: "Wi-Fi 7 ルーター"
+      tags: ["wifi-7", "router", "electronics"]
+      base_price_yen: 42000
+      demand_score: 78
+      affiliate_priority: "amazon"
+
+publisher:
+  default_status_env: "WP_POST_STATUS"
+  default_category: "Electronics"
+  default_tags:
+    - "electronics"
+    - "affiliate"
+    - "review"
+  require_featured_media: false
+
+analyst:
+  rewrite_threshold_ctr: 0.035
+  rewrite_threshold_revenue_yen: 500
+  report_title: "Project GearMaster Weekly Report"

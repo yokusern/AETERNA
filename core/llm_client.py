@@ -9,11 +9,23 @@ from typing import Any
 
 PRIMARY_MODEL = "claude-sonnet-4-6"
 FAST_MODEL = "claude-haiku-4-5-20251001"
+LAST_CALL_TIME = 0.0
+MIN_INTERVAL = 10.0 # 最小間隔（秒）
 
 
 def call(prompt: str, system: str = None, max_tokens: int = 2048,
          expect_json: bool = False, fast: bool = False) -> str:
     """LLMにプロンプトを送り、テキストを返す。失敗時はフォールバックを試みる"""
+    global LAST_CALL_TIME
+    
+    # API過剰使用防止のためのクールダウン
+    elapsed = time.time() - LAST_CALL_TIME
+    if elapsed < MIN_INTERVAL:
+        wait = MIN_INTERVAL - elapsed
+        print(f"[LLM] クールダウン中... ({wait:.1f}秒待機)")
+        time.sleep(wait)
+
+    LAST_CALL_TIME = time.time()
     for attempt in range(3):
         try:
             return _call_anthropic(prompt, system, max_tokens, fast)
