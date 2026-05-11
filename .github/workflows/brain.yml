@@ -1,9 +1,9 @@
-name: AETERNA Brain - Daily Autonomous Run
+name: AETERNA Brain - High-Frequency Autonomous Run
 
 on:
   schedule:
-    # 毎日 21:00 JST (12:00 UTC)
-    - cron: "0 12 * * *"
+    # 6時間おきに実行 (0, 6, 12, 18 UTC)
+    - cron: "0 */6 * * *"
   workflow_dispatch:
     inputs:
       debug:
@@ -42,16 +42,12 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
         run: python core/brain.py
 
-      - name: Auto-Commit Generated Files
+      - name: Auto-Commit Empire Expansion
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🧠 Brain auto-update: ${{ github.run_number }} (${{ github.run_id }})"
-          file_pattern: |
-            data/**
-            agents/*.py
-            products/**
-            core/*.py
-          commit_author: "AETERNA Brain <brain@aeterna-holdings.auto>"
+          commit_message: "🚀 Empire Expansion: Brain Run ${{ github.run_number }}"
+          file_pattern: '.'
+          commit_author: "The Eternal Mind <brain@aeterna-holdings.auto>"
 
       - name: Upload Brain Logs
         uses: actions/upload-artifact@v4
