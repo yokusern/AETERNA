@@ -1,0 +1,21 @@
+{
+  "product_id": "product_C",
+  "name": "Python自動化スクリプト5選【コピペで使える】",
+  "price_jpy": 1980,
+  "currency": "JPY",
+  "category": "code",
+  "tags": ["Python", "自動化", "スクリプト", "業務効率化", "プログラミング", "AI"],
+  "description_short": "ファイル整理・CSV加工・メール送信・Webスクレイピング・PDF生成の実用Pythonスクリプト5本。コピペでそのまま使える。",
+  "content_files": [
+    "content/README.md",
+    "content/file_organizer.py",
+    "content/csv_processor.py",
+    "content/email_sender.py",
+    "content/web_scraper.py",
+    "content/pdf_generator.py",
+    "content/requirements.txt"
+  ],
+  "file_format": "ZIP",
+  "status": "ready_to_upload",
+  "created_at": "2026-05-11"
+}

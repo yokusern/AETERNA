@@ -1,6 +1,6 @@
 """
-gumroad.auto エージェントパッケージ
-デジタル製品販売の完全自動化エージェント群
+gumroad.auto エージェントパッケージ - v2.0
+5エージェント構成: strategist / product_planner / product_builder / sales_optimizer / analytics
 """
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"

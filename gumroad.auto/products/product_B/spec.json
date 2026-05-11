@@ -1,0 +1,14 @@
+{
+  "product_id": "product_B",
+  "name": "Notion業務テンプレートセット（4テンプレート）",
+  "price_jpy": 1480,
+  "currency": "JPY",
+  "category": "productivity",
+  "tags": ["Notion", "テンプレート", "業務効率化", "タスク管理", "議事録", "プロジェクト管理"],
+  "description_short": "プロジェクト管理・議事録・タスク管理（GTD式）・日報の4テンプレート。購入後すぐにNotionに複製して使用可能。",
+  "content_file": "content/templates_guide.md",
+  "file_format": "PDF + Notion duplicate links",
+  "status": "ready_to_upload",
+  "created_at": "2026-05-11",
+  "note": "Notion duplicate URLは実際のNotionページ作成後に追加する"
+}

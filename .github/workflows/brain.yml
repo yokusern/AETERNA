@@ -1,0 +1,62 @@
+name: AETERNA Brain - Daily Autonomous Run
+
+on:
+  schedule:
+    # 毎日 21:00 JST (12:00 UTC)
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "デバッグモード（詳細ログ）"
+        type: boolean
+        default: false
+
+jobs:
+  think-and-act:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python Setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Brain
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PYTHONPATH: ${{ github.workspace }}
+        run: python core/brain.py
+
+      - name: Auto-Commit Generated Files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🧠 Brain auto-update: ${{ github.run_number }} (${{ github.run_id }})"
+          file_pattern: |
+            data/**
+            agents/*.py
+            products/**
+            core/*.py
+          commit_author: "AETERNA Brain <brain@aeterna-holdings.auto>"
+
+      - name: Upload Brain Logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: brain-logs-${{ github.run_number }}
+          path: data/
+          retention-days: 30
