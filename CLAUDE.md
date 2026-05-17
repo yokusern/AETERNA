@@ -19,42 +19,62 @@
 ## 2. 帝国アーキテクチャ：三心の指揮
 
 ### 司令塔 (The Brain)
+
 - **ファイル**: `core/brain.py`
 - **役割**: 戦略的省察 (Reflection) と 意思決定 (Decision)。
 
 ### 第1の心臓：Product Agent
+
 - **ファイル**: `agents/product_agent.py`
 - **役割**: コンテンツ制作・品質管理。自己批判ループによる高精度生成。
 
 ### 第2の心臓：Commerce Agent
+
 - **ファイル**: `agents/commerce_agent.py`
 - **役割**: 販売チャネル（Gumroad等）の管理・プロモーション・価格最適化。
 
 ### 第3の心臓：Growth Agent
+
 - **ファイル**: `agents/growth_agent.py`
 - **役割**: 市場分析・自己修復・プロンプト進化・新規事業立ち上げの実行。
 
 ---
 
-## 3. 実行方法
+## 3. Code Style
+
+- **言語**: Python 3.10+
+
+---
+
+## 4. Build Commands
+
+- `pip install -r requirements.txt` (依存関係のインストール)
+- `python heartbeat.py` (自律ループの起動)
+
+---
+
+## 5. 実行方法
 
 ### 継続的自律実行 (Eternal Loop)
+
 帝国の心拍を維持し、24時間365日の自律成長を可能にします。
+
 ```bash
 python heartbeat.py
 ```
 
 ### 単発実行 (Strategic Manual Run)
+
 ```bash
 python core/brain.py
 ```
 
 ---
 
-## 4. 収益ロードマップ（自律執行対象）
+## 6. 収益ロードマップ（自律執行対象）
 
 | フェーズ | ターゲット | 次のドメイン |
-|---|---|---|
+| :--- | :--- | :--- |
 | **Phase 1** | Digital Content | Gumroadによる基盤収益の確立 |
 | **Phase 2** | Affiliate Auto | 利益¥10,000突破で自動解禁 |
 | **Phase 3** | SaaS/App | 利益¥100,000突破でプラットフォーム化 |

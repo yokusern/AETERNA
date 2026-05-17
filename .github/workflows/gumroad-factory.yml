@@ -1,0 +1,69 @@
+name: Gumroad Product Factory — Daily
+
+on:
+  schedule:
+    # 毎朝9時JST (UTC 0:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  factory:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          cd gumroad.auto
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Write .env
+        run: |
+          cd gumroad.auto
+          echo "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" > .env
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
+          echo "GUMROAD_ACCESS_TOKEN=${{ secrets.GUMROAD_ACCESS_TOKEN }}" >> .env
+          echo "DISCORD_WEBHOOK_URL=${{ secrets.DISCORD_WEBHOOK_URL }}" >> .env
+          echo "PINTEREST_APP_ID=${{ secrets.PINTEREST_APP_ID }}" >> .env
+          echo "PINTEREST_APP_SECRET=${{ secrets.PINTEREST_APP_SECRET }}" >> .env
+          echo "PINTEREST_ACCESS_TOKEN=${{ secrets.PINTEREST_ACCESS_TOKEN }}" >> .env
+          echo "PINTEREST_BOARD_ID=${{ secrets.PINTEREST_BOARD_ID }}" >> .env
+
+      - name: Generate new products (Gemini / Claude)
+        run: |
+          cd gumroad.auto
+          source venv/bin/activate
+          python main.py --count 5 || echo "Product generation completed (with possible API errors)"
+
+      - name: Publish up to 10 products to Gumroad
+        run: |
+          cd gumroad.auto
+          source venv/bin/activate
+          python batch_publish.py --limit 10
+
+      - name: Commit & push (covers + registry)
+        run: |
+          git config user.email "aeterna-bot@github.com"
+          git config user.name "AETERNA Bot"
+          git add gumroad.auto/products/ gumroad.auto/data/
+          git diff --staged --quiet || git commit -m "auto: daily product factory $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Pin published products to Pinterest
+        run: |
+          cd gumroad.auto
+          source venv/bin/activate
+          python auto_pin.py || echo "Pinterest pinning completed (with possible errors)"

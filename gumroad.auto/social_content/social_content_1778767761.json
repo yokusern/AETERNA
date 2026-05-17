@@ -1,0 +1,63 @@
+[
+  {
+    "product_id": "product_1778767394",
+    "product_name": "Quick Start Python",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Transform Your Python Skills",
+      "description": "Looking for the best Python resource? Look no further! This toolkit is packed with value. Get it for $18!",
+      "hashtags": [
+        "#Python",
+        "#Coding",
+        "#OnlineBusiness",
+        "#DigitalDownload",
+        "#Maker",
+        "#IndieHacker",
+        "#CreatorEconomy",
+        "#Programming",
+        "#WebDev",
+        "#PassiveIncome"
+      ],
+      "price": "$18",
+      "product_name": "Quick Start Python",
+      "category": "Programming",
+      "subcategory": "Python"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Want to learn Python? Check out Quick Start Python - only $18! #Programming #Python",
+      "product_name": "Quick Start Python",
+      "price": "$18"
+    }
+  },
+  {
+    "product_id": "product_1778767303",
+    "product_name": "Master データ分析",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Transform Your データ分析 Skills",
+      "description": "Ready to master データ分析? This comprehensive template has everything you need. Download now and start learning!",
+      "hashtags": [
+        "#データ分析",
+        "#OnlineBusiness",
+        "#DigitalDownload",
+        "#Maker",
+        "#IndieHacker",
+        "#CreatorEconomy",
+        "#PassiveIncome",
+        "#SideHustle",
+        "#DigitalProduct"
+      ],
+      "price": "$3501",
+      "product_name": "Master データ分析",
+      "category": "プログラミング",
+      "subcategory": "データ分析"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Stop scrolling, check this out... Master データ分析 - your guide to データ分析. $3501 #DigitalProduct #データ分析",
+      "product_name": "Master データ分析",
+      "price": "$3501"
+    }
+  }
+]

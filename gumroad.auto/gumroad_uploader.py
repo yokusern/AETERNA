@@ -64,7 +64,7 @@ class GumroadUploader:
             raise FileNotFoundError(f"ファイルが見つかりません: {file_path}")
 
         with open(path, "rb") as f:
-            resp = requests.put(
+            resp = requests.post(
                 f"{self.API_BASE}/products/{product_id}/product_files",
                 headers=self._headers(),
                 files={"file": (path.name, f)},

@@ -4,3 +4,6 @@ beautifulsoup4>=4.12.0
 pytrends>=4.9.0
 reportlab>=4.0.0
 Pillow>=10.0.0
+python-dotenv>=1.0.0
+openai>=1.0.0
+mistralai>=1.0.0

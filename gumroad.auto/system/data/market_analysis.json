@@ -1,148 +1,208 @@
 {
   "trending_categories": [
     {
-      "category": "プログラミング",
-      "subcategory": "Python",
+      "category": "Productivity",
+      "subcategory": "Notion Templates",
+      "trend_score": 96,
+      "user_demand": "high",
+      "avg_price": 19,
+      "product_type": "notion_template",
+      "estimated_monthly_revenue": 4560,
+      "note": "Top seller on Gumroad. Life OS, Content OS, Student OS consistently rank #1"
+    },
+    {
+      "category": "AI",
+      "subcategory": "ChatGPT Prompts",
       "trend_score": 95,
       "user_demand": "high",
-      "avg_price": 2500,
-      "estimated_monthly_revenue": 23750
+      "avg_price": 17,
+      "product_type": "prompt_pack",
+      "estimated_monthly_revenue": 4250,
+      "note": "Mega prompt packs selling thousands of copies. Business + content creation top niches"
     },
     {
-      "category": "プログラミング",
-      "subcategory": "データ分析",
-      "trend_score": 92,
+      "category": "Finance",
+      "subcategory": "Budget Tracker",
+      "trend_score": 93,
       "user_demand": "high",
-      "avg_price": 3500,
-      "estimated_monthly_revenue": 32200
+      "avg_price": 12,
+      "product_type": "spreadsheet_pack",
+      "estimated_monthly_revenue": 3600,
+      "note": "Excel/Google Sheets trackers dominate finance category. Habit + budget combos sell well"
     },
     {
-      "category": "プログラミング",
-      "subcategory": "JavaScript",
+      "category": "Business",
+      "subcategory": "Freelance Templates",
+      "trend_score": 91,
+      "user_demand": "high",
+      "avg_price": 19,
+      "product_type": "business_template",
+      "estimated_monthly_revenue": 4370,
+      "note": "Contracts, invoices, proposals — freelancers buy immediately. High perceived value"
+    },
+    {
+      "category": "Business",
+      "subcategory": "Side Hustle",
+      "trend_score": 90,
+      "user_demand": "high",
+      "avg_price": 15,
+      "product_type": "guide",
+      "estimated_monthly_revenue": 3375,
+      "note": "Evergreen high demand. Faceless YouTube, print-on-demand, digital products guides"
+    },
+    {
+      "category": "AI",
+      "subcategory": "Prompt Engineering",
+      "trend_score": 90,
+      "user_demand": "high",
+      "avg_price": 15,
+      "product_type": "prompt_pack",
+      "estimated_monthly_revenue": 4050,
+      "note": "Claude + ChatGPT engineering prompts. Advanced packs sell better than basics"
+    },
+    {
+      "category": "Productivity",
+      "subcategory": "Interactive Tools",
       "trend_score": 88,
       "user_demand": "high",
-      "avg_price": 2000,
-      "estimated_monthly_revenue": 17600
+      "avg_price": 14,
+      "product_type": "html_tool",
+      "estimated_monthly_revenue": 3920,
+      "note": "No-install HTML calculators and trackers. Unique on Gumroad = less competition"
     },
     {
-      "category": "起業・副業",
-      "subcategory": "副業ガイド",
+      "category": "Marketing",
+      "subcategory": "Social Media Templates",
       "trend_score": 88,
       "user_demand": "high",
-      "avg_price": 1000,
-      "estimated_monthly_revenue": 8800
+      "avg_price": 17,
+      "product_type": "prompt_pack",
+      "estimated_monthly_revenue": 3740,
+      "note": "Caption templates, hashtag packs, content calendar prompts all sell in bulk"
     },
     {
-      "category": "プログラミング",
-      "subcategory": "React",
+      "category": "Programming",
+      "subcategory": "Python Automation",
+      "trend_score": 87,
+      "user_demand": "high",
+      "avg_price": 19,
+      "product_type": "script_pack",
+      "estimated_monthly_revenue": 3990,
+      "note": "Automation scripts for real tasks (rename, scrape, organize) — high perceived value"
+    },
+    {
+      "category": "Business",
+      "subcategory": "Launch Checklists",
+      "trend_score": 86,
+      "user_demand": "high",
+      "avg_price": 12,
+      "product_type": "checklist_pack",
+      "estimated_monthly_revenue": 3024,
+      "note": "Interactive HTML checklists sell better than plain PDF. Business + content creator niches"
+    },
+    {
+      "category": "Productivity",
+      "subcategory": "Study OS",
       "trend_score": 85,
       "user_demand": "high",
-      "avg_price": 3000,
-      "estimated_monthly_revenue": 25500
+      "avg_price": 17,
+      "product_type": "notion_template",
+      "estimated_monthly_revenue": 3570,
+      "note": "Student Notion templates are top sellers. Assignment tracker + reading list + goals"
     },
     {
-      "category": "起業・副業",
-      "subcategory": "フリーランス",
+      "category": "Business",
+      "subcategory": "Freelancing",
       "trend_score": 85,
       "user_demand": "high",
-      "avg_price": 1500,
-      "estimated_monthly_revenue": 12750
+      "avg_price": 14,
+      "product_type": "guide",
+      "estimated_monthly_revenue": 2975,
+      "note": "How to get clients, price services, build portfolio — beginner freelancers buy fast"
     },
     {
-      "category": "ビジネス・マーケティング",
-      "subcategory": "ライティング",
+      "category": "Finance",
+      "subcategory": "Habit Tracker",
+      "trend_score": 84,
+      "user_demand": "high",
+      "avg_price": 9,
+      "product_type": "spreadsheet_pack",
+      "estimated_monthly_revenue": 2268,
+      "note": "Simple habit tracker spreadsheets sell in volume at lower price point"
+    },
+    {
+      "category": "Marketing",
+      "subcategory": "Email Marketing",
+      "trend_score": 83,
+      "user_demand": "medium",
+      "avg_price": 19,
+      "product_type": "business_template",
+      "estimated_monthly_revenue": 3572,
+      "note": "Email sequence templates, welcome series — copywriters and business owners buy"
+    },
+    {
+      "category": "Programming",
+      "subcategory": "Data Analysis",
       "trend_score": 82,
-      "user_demand": "medium",
-      "avg_price": 1200,
-      "estimated_monthly_revenue": 9840
+      "user_demand": "high",
+      "avg_price": 22,
+      "product_type": "script_pack",
+      "estimated_monthly_revenue": 4356,
+      "note": "Pandas / data cleaning scripts. Analysts and data scientists pay premium"
     },
     {
-      "category": "デザイン",
-      "subcategory": "UI/UX",
+      "category": "Business",
+      "subcategory": "Content Creator OS",
+      "trend_score": 82,
+      "user_demand": "high",
+      "avg_price": 19,
+      "product_type": "notion_template",
+      "estimated_monthly_revenue": 3458,
+      "note": "Content calendar + video tracker + brand kit. YouTubers + TikTokers target audience"
+    },
+    {
+      "category": "Marketing",
+      "subcategory": "SEO Strategy",
       "trend_score": 80,
       "user_demand": "medium",
-      "avg_price": 2500,
-      "estimated_monthly_revenue": 20000
+      "avg_price": 17,
+      "product_type": "checklist_pack",
+      "estimated_monthly_revenue": 2856,
+      "note": "SEO audit checklists and keyword research templates sell to bloggers and agencies"
     },
     {
-      "category": "起業・副業",
-      "subcategory": "ビジネスモデル",
-      "trend_score": 80,
-      "user_demand": "medium",
-      "avg_price": 2000,
-      "estimated_monthly_revenue": 16000
-    },
-    {
-      "category": "ビジネス・マーケティング",
-      "subcategory": "SEO",
+      "category": "Business",
+      "subcategory": "Business Models",
       "trend_score": 78,
       "user_demand": "medium",
-      "avg_price": 1500,
-      "estimated_monthly_revenue": 11700
-    }
-  ],
-  "content_ideas": [
-    {
-      "id": "idea_001",
-      "theme": "Python初心者向け完全ガイド",
-      "category": "プログラミング",
-      "subcategory": "Python",
-      "target_audience": "初心者〜中級者",
-      "estimated_demand": "high",
-      "recommended_price": 2500,
-      "estimated_monthly_sales": 9,
-      "estimated_revenue": 23750,
-      "priority": 1
+      "avg_price": 19,
+      "product_type": "guide",
+      "estimated_monthly_revenue": 2964,
+      "note": "Business model canvas, financial projections — startup founders buy these"
     },
     {
-      "id": "idea_002",
-      "theme": "データ分析初心者向け完全ガイド",
-      "category": "プログラミング",
-      "subcategory": "データ分析",
-      "target_audience": "初心者〜中級者",
-      "estimated_demand": "high",
-      "recommended_price": 3500,
-      "estimated_monthly_sales": 9,
-      "estimated_revenue": 32200,
-      "priority": 2
+      "category": "AI",
+      "subcategory": "Midjourney Prompts",
+      "trend_score": 77,
+      "user_demand": "medium",
+      "avg_price": 12,
+      "product_type": "prompt_pack",
+      "estimated_monthly_revenue": 2772,
+      "note": "AI art prompt packs still sell. Architecture, portrait, product photography niches"
     },
     {
-      "id": "idea_003",
-      "theme": "JavaScript初心者向け完全ガイド",
-      "category": "プログラミング",
+      "category": "Programming",
       "subcategory": "JavaScript",
-      "target_audience": "初心者〜中級者",
-      "estimated_demand": "high",
-      "recommended_price": 2000,
-      "estimated_monthly_sales": 8,
-      "estimated_revenue": 17600,
-      "priority": 3
-    },
-    {
-      "id": "idea_004",
-      "theme": "副業ガイド初心者向け完全ガイド",
-      "category": "起業・副業",
-      "subcategory": "副業ガイド",
-      "target_audience": "初心者〜中級者",
-      "estimated_demand": "high",
-      "recommended_price": 1000,
-      "estimated_monthly_sales": 8,
-      "estimated_revenue": 8800,
-      "priority": 4
-    },
-    {
-      "id": "idea_005",
-      "theme": "React初心者向け完全ガイド",
-      "category": "プログラミング",
-      "subcategory": "React",
-      "target_audience": "初心者〜中級者",
-      "estimated_demand": "high",
-      "recommended_price": 3000,
-      "estimated_monthly_sales": 8,
-      "estimated_revenue": 25500,
-      "priority": 5
+      "trend_score": 75,
+      "user_demand": "medium",
+      "avg_price": 17,
+      "product_type": "script_pack",
+      "estimated_monthly_revenue": 2550,
+      "note": "JS snippets, React boilerplates, utility functions packs"
     }
   ],
-  "analyzed_at": "2026-05-10T14:49:49.141980",
-  "total_estimated_revenue": 107850
+  "content_ideas": [],
+  "analyzed_at": "2026-05-16",
+  "total_estimated_revenue": 5000,
+  "source": "AETERNA market research — Gumroad trending analysis 2026"
 }

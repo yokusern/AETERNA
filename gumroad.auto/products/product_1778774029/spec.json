@@ -1,0 +1,11 @@
+{
+  "product_id": "product_1778774029",
+  "name": "JavaScript Made Easy",
+  "category": "Programming",
+  "subcategory": "JavaScript",
+  "product_type": "guide",
+  "price_usd": 17,
+  "trend_score": 88,
+  "content_file": "content.md",
+  "file_format": "MD"
+}

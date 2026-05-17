@@ -54,3 +54,4 @@ Affiliate.auto/production_site/node_modules/
 # gumroad.auto specific
 gumroad.auto/agents/logs/
 gumroad.auto/system/.venv/
+.vercel

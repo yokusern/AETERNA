@@ -1,0 +1,157 @@
+[
+  {
+    "product_id": "product_1778767986",
+    "product_name": "Practical Side Hustle Handbook",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Master Side Hustle with Practical Side Hustle Handbook",
+      "description": "Ready to master Side Hustle? This comprehensive guide has everything you need. Download now and start learning!",
+      "hashtags": [
+        "#DigitalProduct",
+        "#Business",
+        "#PassiveIncome",
+        "#IndieHacker",
+        "#Entrepreneur",
+        "#Maker",
+        "#DigitalDownload",
+        "#Freelance",
+        "#SideHustle",
+        "#CreatorEconomy"
+      ],
+      "price": "$7",
+      "product_name": "Practical Side Hustle Handbook",
+      "category": "Business",
+      "subcategory": "Side Hustle"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "This changed how I... Practical Side Hustle Handbook - your guide to Side Hustle. $7 #DigitalProduct #SideHustle",
+      "product_name": "Practical Side Hustle Handbook",
+      "price": "$7"
+    }
+  },
+  {
+    "product_id": "product_1778767980",
+    "product_name": "Notion Templates Made Easy",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Transform Your Notion Templates Skills",
+      "description": "Ready to master Notion Templates? This comprehensive template has everything you need. Download now and start learning!",
+      "hashtags": [
+        "#Productivity",
+        "#DigitalProduct",
+        "#Workflow",
+        "#PassiveIncome",
+        "#Efficiency",
+        "#IndieHacker",
+        "#Notion",
+        "#NotionTemplates",
+        "#Maker",
+        "#DigitalDownload"
+      ],
+      "price": "$8",
+      "product_name": "Notion Templates Made Easy",
+      "category": "Productivity",
+      "subcategory": "Notion Templates"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "I just created this... Notion Templates Made Easy - your guide to Notion Templates. $8 #DigitalProduct #NotionTemplates",
+      "product_name": "Notion Templates Made Easy",
+      "price": "$8"
+    }
+  },
+  {
+    "product_id": "product_1778767982",
+    "product_name": "Complete JavaScript Guide",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Get Complete JavaScript Guide Now",
+      "description": "Looking for the best JavaScript resource? Look no further! This toolkit is packed with value. Get it for $17!",
+      "hashtags": [
+        "#Coding",
+        "#DigitalProduct",
+        "#Programming",
+        "#PassiveIncome",
+        "#JavaScript",
+        "#IndieHacker",
+        "#WebDev",
+        "#Maker",
+        "#DigitalDownload",
+        "#SideHustle"
+      ],
+      "price": "$17",
+      "product_name": "Complete JavaScript Guide",
+      "category": "Programming",
+      "subcategory": "JavaScript"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Here's how to... Complete JavaScript Guide - your guide to JavaScript. $17 #DigitalProduct #JavaScript",
+      "product_name": "Complete JavaScript Guide",
+      "price": "$17"
+    }
+  },
+  {
+    "product_id": "product_1778767984",
+    "product_name": "Practical UI/UX Handbook",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Master UI/UX with Practical UI/UX Handbook",
+      "description": "Discover the ultimate guide to UI/UX. This guide is perfect for beginners and intermediate learners. Get yours today for $24!",
+      "hashtags": [
+        "#Creative",
+        "#DigitalProduct",
+        "#PassiveIncome",
+        "#Design",
+        "#UI/UX",
+        "#UIUX",
+        "#IndieHacker",
+        "#GraphicDesign",
+        "#Maker",
+        "#DigitalDownload"
+      ],
+      "price": "$24",
+      "product_name": "Practical UI/UX Handbook",
+      "category": "Design",
+      "subcategory": "UI/UX"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Stop scrolling, check this out... Practical UI/UX Handbook - your guide to UI/UX. $24 #DigitalProduct #UI/UX",
+      "product_name": "Practical UI/UX Handbook",
+      "price": "$24"
+    }
+  },
+  {
+    "product_id": "product_1778767978",
+    "product_name": "Quick Start Freelancing",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Transform Your Freelancing Skills",
+      "description": "Looking for the best Freelancing resource? Look no further! This template is packed with value. Get it for $10!",
+      "hashtags": [
+        "#DigitalProduct",
+        "#Business",
+        "#PassiveIncome",
+        "#IndieHacker",
+        "#Freelancing",
+        "#Entrepreneur",
+        "#Maker",
+        "#DigitalDownload",
+        "#Freelance",
+        "#SideHustle"
+      ],
+      "price": "$10",
+      "product_name": "Quick Start Freelancing",
+      "category": "Business",
+      "subcategory": "Freelancing"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Want to learn Freelancing? Check out Quick Start Freelancing - only $10! #Business #Freelancing",
+      "product_name": "Quick Start Freelancing",
+      "price": "$10"
+    }
+  }
+]

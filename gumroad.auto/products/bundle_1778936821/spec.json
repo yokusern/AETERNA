@@ -1,0 +1,19 @@
+{
+  "product_id": "bundle_1778936821",
+  "name": "Ultimate Notion Template Bundle",
+  "category": "Bundle",
+  "subcategory": "Bundle Pack",
+  "product_type": "bundle",
+  "price_usd": 63,
+  "trend_score": 90,
+  "is_bundle": true,
+  "bundle_items": [
+    "notion_life_os_001",
+    "biz_os_1778936028",
+    "product_1778767980",
+    "product_1778767920",
+    "product_1778773898",
+    "product_1778768574"
+  ],
+  "created_at": "2026-05-16T22:07:01.777883"
+}

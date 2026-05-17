@@ -1,0 +1,157 @@
+[
+  {
+    "product_id": "product_1778767945",
+    "product_name": "Practical Python Handbook",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Master Python with Practical Python Handbook",
+      "description": "Ready to master Python? This comprehensive toolkit has everything you need. Download now and start learning!",
+      "hashtags": [
+        "#SideHustle",
+        "#OnlineBusiness",
+        "#WebDev",
+        "#Programming",
+        "#Maker",
+        "#Python",
+        "#Tech",
+        "#IndieHacker",
+        "#DigitalDownload",
+        "#Coding"
+      ],
+      "price": "$21",
+      "product_name": "Practical Python Handbook",
+      "category": "Programming",
+      "subcategory": "Python"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Just launched: Practical Python Handbook - the ultimate toolkit for Python. Get it now! $21",
+      "product_name": "Practical Python Handbook",
+      "price": "$21"
+    }
+  },
+  {
+    "product_id": "product_1778767949",
+    "product_name": "Prompt Engineering Essentials",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Transform Your Prompt Engineering Skills",
+      "description": "Looking for the best Prompt Engineering resource? Look no further! This toolkit is packed with value. Get it for $19!",
+      "hashtags": [
+        "#SideHustle",
+        "#ArtificialIntelligence",
+        "#OnlineBusiness",
+        "#Maker",
+        "#IndieHacker",
+        "#MachineLearning",
+        "#DigitalDownload",
+        "#AI",
+        "#PromptEngineering",
+        "#PassiveIncome"
+      ],
+      "price": "$19",
+      "product_name": "Prompt Engineering Essentials",
+      "category": "AI",
+      "subcategory": "Prompt Engineering"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Just launched: Prompt Engineering Essentials - the ultimate toolkit for Prompt Engineering. Get it now! $19",
+      "product_name": "Prompt Engineering Essentials",
+      "price": "$19"
+    }
+  },
+  {
+    "product_id": "product_1778767947",
+    "product_name": "Master Notion Templates",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Master Notion Templates - Everything You Need",
+      "description": "Ready to master Notion Templates? This comprehensive ebook has everything you need. Download now and start learning!",
+      "hashtags": [
+        "#SideHustle",
+        "#Notion",
+        "#OnlineBusiness",
+        "#Maker",
+        "#IndieHacker",
+        "#Workflow",
+        "#NotionTemplates",
+        "#DigitalDownload",
+        "#Efficiency",
+        "#Productivity"
+      ],
+      "price": "$8",
+      "product_name": "Master Notion Templates",
+      "category": "Productivity",
+      "subcategory": "Notion Templates"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Just launched: Master Notion Templates - the ultimate ebook for Notion Templates. Get it now! $8",
+      "product_name": "Master Notion Templates",
+      "price": "$8"
+    }
+  },
+  {
+    "product_id": "product_1778767941",
+    "product_name": "Practical React Handbook",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Transform Your React Skills",
+      "description": "Discover the ultimate guide to React. This toolkit is perfect for beginners and intermediate learners. Get yours today for $26!",
+      "hashtags": [
+        "#SideHustle",
+        "#OnlineBusiness",
+        "#WebDev",
+        "#Programming",
+        "#Maker",
+        "#React",
+        "#Tech",
+        "#IndieHacker",
+        "#DigitalDownload",
+        "#Coding"
+      ],
+      "price": "$26",
+      "product_name": "Practical React Handbook",
+      "category": "Programming",
+      "subcategory": "React"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "This changed how I... Practical React Handbook - your guide to React. $26 #DigitalProduct #React",
+      "product_name": "Practical React Handbook",
+      "price": "$26"
+    }
+  },
+  {
+    "product_id": "product_1778767943",
+    "product_name": "Complete Business Models Guide",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Transform Your Business Models Skills",
+      "description": "Discover the ultimate guide to Business Models. This ebook is perfect for beginners and intermediate learners. Get yours today for $18!",
+      "hashtags": [
+        "#Business",
+        "#SideHustle",
+        "#OnlineBusiness",
+        "#Entrepreneur",
+        "#Freelance",
+        "#Maker",
+        "#IndieHacker",
+        "#Startup",
+        "#BusinessModels",
+        "#DigitalDownload"
+      ],
+      "price": "$18",
+      "product_name": "Complete Business Models Guide",
+      "category": "Business",
+      "subcategory": "Business Models"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Just launched: Complete Business Models Guide - the ultimate ebook for Business Models. Get it now! $18",
+      "product_name": "Complete Business Models Guide",
+      "price": "$18"
+    }
+  }
+]

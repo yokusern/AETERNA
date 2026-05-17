@@ -1,0 +1,157 @@
+[
+  {
+    "product_id": "product_1778767920",
+    "product_name": "JavaScript Essentials",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Transform Your JavaScript Skills",
+      "description": "Ready to master JavaScript? This comprehensive template has everything you need. Download now and start learning!",
+      "hashtags": [
+        "#Programming",
+        "#Maker",
+        "#OnlineBusiness",
+        "#SideHustle",
+        "#JavaScript",
+        "#PassiveIncome",
+        "#CreatorEconomy",
+        "#Tech",
+        "#DigitalDownload",
+        "#WebDev"
+      ],
+      "price": "$21",
+      "product_name": "JavaScript Essentials",
+      "category": "Programming",
+      "subcategory": "JavaScript"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Want to learn JavaScript? Check out JavaScript Essentials - only $21! #Programming #JavaScript",
+      "product_name": "JavaScript Essentials",
+      "price": "$21"
+    }
+  },
+  {
+    "product_id": "product_1778767918",
+    "product_name": "Business Models for Beginners",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Business Models for Beginners - Everything You Need",
+      "description": "Looking for the best Business Models resource? Look no further! This ebook is packed with value. Get it for $15!",
+      "hashtags": [
+        "#Maker",
+        "#OnlineBusiness",
+        "#SideHustle",
+        "#Entrepreneur",
+        "#PassiveIncome",
+        "#CreatorEconomy",
+        "#BusinessModels",
+        "#DigitalDownload",
+        "#Startup",
+        "#Freelance"
+      ],
+      "price": "$15",
+      "product_name": "Business Models for Beginners",
+      "category": "Business",
+      "subcategory": "Business Models"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Want to learn Business Models? Check out Business Models for Beginners - only $15! #Business #BusinessModels",
+      "product_name": "Business Models for Beginners",
+      "price": "$15"
+    }
+  },
+  {
+    "product_id": "product_1778767922",
+    "product_name": "Quick Start Side Hustle",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Master Side Hustle with Quick Start Side Hustle",
+      "description": "Looking for the best Side Hustle resource? Look no further! This ebook is packed with value. Get it for $14!",
+      "hashtags": [
+        "#Maker",
+        "#OnlineBusiness",
+        "#SideHustle",
+        "#Entrepreneur",
+        "#PassiveIncome",
+        "#CreatorEconomy",
+        "#DigitalDownload",
+        "#Startup",
+        "#Freelance",
+        "#IndieHacker"
+      ],
+      "price": "$14",
+      "product_name": "Quick Start Side Hustle",
+      "category": "Business",
+      "subcategory": "Side Hustle"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Here's how to... Quick Start Side Hustle - your guide to Side Hustle. $14 #DigitalProduct #SideHustle",
+      "product_name": "Quick Start Side Hustle",
+      "price": "$14"
+    }
+  },
+  {
+    "product_id": "product_1778767916",
+    "product_name": "Notion Templates Essentials",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Notion Templates Essentials - Everything You Need",
+      "description": "Discover the ultimate guide to Notion Templates. This toolkit is perfect for beginners and intermediate learners. Get yours today for $12!",
+      "hashtags": [
+        "#Maker",
+        "#OnlineBusiness",
+        "#Productivity",
+        "#SideHustle",
+        "#PassiveIncome",
+        "#CreatorEconomy",
+        "#DigitalDownload",
+        "#Notion",
+        "#Efficiency",
+        "#Workflow"
+      ],
+      "price": "$12",
+      "product_name": "Notion Templates Essentials",
+      "category": "Productivity",
+      "subcategory": "Notion Templates"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Stop scrolling, check this out... Notion Templates Essentials - your guide to Notion Templates. $12 #DigitalProduct #NotionTemplates",
+      "product_name": "Notion Templates Essentials",
+      "price": "$12"
+    }
+  },
+  {
+    "product_id": "product_1778767914",
+    "product_name": "Quick Start UI/UX",
+    "pinterest": {
+      "platform": "Pinterest",
+      "title": "Quick Start UI/UX - Everything You Need",
+      "description": "Looking for the best UI/UX resource? Look no further! This template is packed with value. Get it for $23!",
+      "hashtags": [
+        "#Maker",
+        "#OnlineBusiness",
+        "#Design",
+        "#SideHustle",
+        "#PassiveIncome",
+        "#CreatorEconomy",
+        "#GraphicDesign",
+        "#UI/UX",
+        "#DigitalDownload",
+        "#UIUX"
+      ],
+      "price": "$23",
+      "product_name": "Quick Start UI/UX",
+      "category": "Design",
+      "subcategory": "UI/UX"
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "tweet": "Want to learn UI/UX? Check out Quick Start UI/UX - only $23! #Design #UI/UX",
+      "product_name": "Quick Start UI/UX",
+      "price": "$23"
+    }
+  }
+]

@@ -1,0 +1,159 @@
+{
+  "goal": "$1000+/month from Gumroad",
+  "generated_at": "2026-05-14T23:02:56.481851",
+  "revenue_plan": {
+    "monthly_goal": 1000,
+    "products_per_month": 150,
+    "avg_price": 15,
+    "conversion_rate": 0.02,
+    "monthly_sales_needed": 66,
+    "daily_sales_needed": 2,
+    "explanation": [
+      "Goal: $1000/month (~¥150,000)",
+      "Strategy: Publish 150 products/month (5/day)",
+      "Expected: 3 sales/month at 2% conversion",
+      "Revenue: 45/month"
+    ]
+  },
+  "platforms": [
+    {
+      "name": "Twitter/X",
+      "frequency": "3-5 times/day",
+      "content_types": [
+        "Quick tips about your product niche",
+        "Before/After scenarios",
+        "Questions to engage audience",
+        "Product screenshots/previews",
+        "Short testimonials (even hypothetical at first)"
+      ],
+      "hashtags": [
+        "#SideHustle",
+        "#Freelance",
+        "#DigitalProducts",
+        "#PassiveIncome",
+        "#Maker",
+        "#IndieHacker",
+        "#Notion",
+        "#Python",
+        "#WebDev",
+        "#AI"
+      ],
+      "best_times": [
+        "9 AM EST",
+        "12 PM EST",
+        "5 PM EST"
+      ]
+    },
+    {
+      "name": "Reddit",
+      "frequency": "1-2 times/day",
+      "content_types": [
+        "Value-first posts in niche communities",
+        "Answer questions with helpful insights",
+        "Share your journey (transparently)",
+        "Case studies of your products"
+      ],
+      "subreddits": [
+        "r/sidehustle",
+        "r/passive_income",
+        "r/indiehackers",
+        "r/learnpython",
+        "r/webdev",
+        "r/Notion"
+      ],
+      "rule": "80% value, 20% promotion"
+    },
+    {
+      "name": "YouTube Shorts / TikTok",
+      "frequency": "1-2 times/day",
+      "content_types": [
+        "5-second problem → 15-second solution",
+        "Screen recording of your product in use",
+        "Before/After comparisons",
+        "Day in the life of a digital product maker"
+      ],
+      "duration": "15-60 seconds",
+      "hooks": [
+        "I made $X with this...",
+        "Stop doing this...",
+        "Here's how I...",
+        "You're missing out on..."
+      ]
+    },
+    {
+      "name": "Instagram / Pinterest",
+      "frequency": "2-3 times/day",
+      "content_types": [
+        "Visually appealing product mockups",
+        "Quote graphics about productivity/business",
+        "Checklists and cheat sheets",
+        "Behind-the-scenes of your process"
+      ],
+      "focus": "Highly visual, aesthetic content"
+    }
+  ],
+  "product_page_template": {
+    "structure": [
+      "1. HEADLINE: Clear, benefit-focused title",
+      "2. SUBHEADLINE: Expand on the main benefit",
+      "3. PROBLEM: What pain point are you solving?",
+      "4. SOLUTION: How your product solves it",
+      "5. WHAT'S INCLUDED: List everything they get",
+      "6. WHO IS THIS FOR: Define your target audience",
+      "7. FAQ: Answer common questions",
+      "8. CALL TO ACTION: Clear next step"
+    ],
+    "title_templates": [
+      "The Complete [Niche] Guide for [Audience]",
+      "[Niche] Made Easy: A Step-by-Step Guide",
+      "How to [Achieve Goal] with [Niche]",
+      "The Ultimate [Niche] Blueprint",
+      "Quick Start [Niche] for Beginners"
+    ],
+    "price_points": [
+      9,
+      12,
+      15,
+      17,
+      19,
+      25,
+      29
+    ],
+    "tips": [
+      "Use 9, 12, 15 instead of 10, 13, 16",
+      "Start lower ($9-$15) for first products",
+      "Increase price as you get social proof",
+      "Offer time-limited discounts to create urgency"
+    ]
+  },
+  "daily_action_plan": {
+    "morning": [
+      "Publish 1 new product to Gumroad",
+      "Post 2-3 times on Twitter/X",
+      "Engage with 10+ accounts in your niche"
+    ],
+    "afternoon": [
+      "Create 1 short-form video (TikTok/YouTube Shorts)",
+      "Post 1-2 times on Instagram/Pinterest",
+      "Participate in 1 Reddit thread (value-first)"
+    ],
+    "evening": [
+      "Plan tomorrow's products/content",
+      "Analyze what performed best today",
+      "Optimize 1 existing product page"
+    ],
+    "weekly": [
+      "Review metrics on Sunday",
+      "Double down on what's working",
+      "Cut what's not working",
+      "Set goals for next week"
+    ]
+  },
+  "key_principles": [
+    "Speed over perfection: Publish 5 products/day",
+    "Volume first: Create many products to find winners",
+    "Learn from data: Double down on what sells",
+    "Provide value first: 80% value, 20% promotion",
+    "Be consistent: Show up every single day"
+  ]
+}

@@ -7,7 +7,17 @@ import os
 import json
 import random
 from datetime import datetime, timedelta
-from .base_agent import BaseAgent
+try:
+    from .base_agent import BaseAgent # type: ignore
+except (ImportError, ValueError):
+    # IDE解析および直接実行時のフォールバック
+    try:
+        from base_agent import BaseAgent
+    except ImportError:
+        import sys
+        from pathlib import Path
+        sys.path.append(str(Path(__file__).parent))
+        from base_agent import BaseAgent
 
 
 class SalesTrackerAgent(BaseAgent):
@@ -125,33 +135,26 @@ class SalesTrackerAgent(BaseAgent):
     
     def execute(self) -> bool:
         """エージェント実行"""
-        self.log("[1/3] 販売データ読み込み中...")
-        sales_data = self.load_sales_data()
-        
-        # データがなければシミュレーション
-        if not sales_data.get('sales'):
-            self.log("販売データがないため、シミュレーションデータを生成します")
-            sales_data['sales'] = self.generate_simulated_sales()
-        
-        self.record_result('sales_count', len(sales_data['sales']))
-        
-        self.log("[2/3] 販売分析中...")
-        analysis = self.analyze_sales(sales_data)
-        
-        self.record_result('total_sales', analysis['total_sales'])
-        self.record_result('total_revenue', analysis['total_revenue'])
-        self.record_result('best_selling', analysis['best_selling'])
-        self.record_result('daily_average', analysis['daily_average'])
-        
-        self.log(f"総販売数: {analysis['total_sales']}件")
-        self.log(f"総収益: ¥{analysis['total_revenue']:,}")
-        if analysis['best_selling']:
-            self.log(f"ベストセラー: {analysis['best_selling']['name']} ({analysis['best_selling']['count']}件)")
-        
-        self.log("[3/3] 販売データ保存中...")
-        self.save_sales_data(sales_data)
-        
-        self.log("✅ 販売追跡完了")
-        self.record_result('status', 'success')
-        
-        return True
+        self.log("[1/2] Gumroad APIから売上データを取得中...")
+        try:
+            from gumroad_uploader import GumroadUploader
+            uploader = GumroadUploader()
+            sales = uploader.get_sales()
+            
+            self.log(f"API取得完了: {len(sales)}件の売上を確認")
+            
+            # state_managerに反映
+            from core import state_manager
+            state_manager.update_revenue(sales)
+            
+            analysis = self.analyze_sales({'sales': sales})
+            
+            self.record_result('total_sales', analysis['total_sales'])
+            self.record_result('total_revenue', analysis['total_revenue'])
+            self.record_result('status', 'success')
+            
+            self.log(f"総収益: ¥{analysis['total_revenue']:,}")
+            return True
+        except Exception as e:
+            self.log(f"API取得エラー: {e}", "error")
+            return False

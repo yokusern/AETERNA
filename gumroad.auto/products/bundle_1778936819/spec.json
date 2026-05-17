@@ -1,0 +1,17 @@
+{
+  "product_id": "bundle_1778936819",
+  "name": "Complete Prompt Pack Collection",
+  "category": "Bundle",
+  "subcategory": "Bundle Pack",
+  "product_type": "bundle",
+  "price_usd": 38,
+  "trend_score": 90,
+  "is_bundle": true,
+  "bundle_items": [
+    "chatgpt_biz_1778936029",
+    "prompt_pack_content_001",
+    "social_prompts_1778936030",
+    "ai_art_prompts_1778936031"
+  ],
+  "created_at": "2026-05-16T22:06:59.743914"
+}

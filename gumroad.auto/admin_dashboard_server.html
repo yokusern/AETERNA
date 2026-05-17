@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AETERNA — Revenue Dashboard</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0f;min-height:100vh;padding:20px;color:#e2e8f0}
+.container{max-width:1400px;margin:0 auto}
+
+/* Header */
+header{text-align:center;padding:24px 0 20px;margin-bottom:24px}
+header h1{font-size:1.8rem;font-weight:800;letter-spacing:3px;background:linear-gradient(135deg,#a78bfa,#60a5fa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{color:#64748b;margin-top:6px;font-size:.9rem}
+
+/* Status bar */
+.status-bar{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:14px 20px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between}
+.status-bar.online{border-color:#10b98133}
+.status-left{display:flex;align-items:center;gap:10px}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#ef4444}
+.status-dot.green{background:#10b981;box-shadow:0 0 8px #10b981}
+.status-label{font-size:.85rem;color:#94a3b8}
+.header-btns{display:flex;gap:8px}
+.header-btn{background:#1f2937;border:1px solid #374151;color:#94a3b8;padding:7px 14px;border-radius:8px;cursor:pointer;font-size:.8rem;transition:.2s}
+.header-btn:hover{background:#374151;color:#e2e8f0}
+.header-btn.primary{background:#7c3aed;border-color:#7c3aed;color:white}
+.header-btn.primary:hover{background:#6d28d9}
+
+/* KPI cards */
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:24px}
+.kpi{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:18px;text-align:center}
+.kpi h3{font-size:.7rem;text-transform:uppercase;letter-spacing:1px;color:#4b5563;margin-bottom:8px}
+.kpi .num{font-size:1.8rem;font-weight:800;color:#e2e8f0}
+.kpi .num.green{color:#34d399}
+.kpi .num.purple{color:#a78bfa}
+.kpi .num.blue{color:#60a5fa}
+.kpi .num.yellow{color:#fbbf24}
+
+/* Tab navigation */
+.tabs{display:flex;gap:4px;margin-bottom:20px;background:#111827;border:1px solid #1f2937;border-radius:12px;padding:4px}
+.tab{flex:1;padding:10px;border:none;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer;background:transparent;color:#4b5563;transition:.2s}
+.tab.active{background:#7c3aed;color:white}
+
+/* Product grid */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
+
+/* Product card */
+.product-card{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:20px;transition:.2s}
+.product-card:hover{border-color:#374151}
+.product-card.published{border-top:2px solid #10b981}
+.product-card.pending{border-top:2px solid #f59e0b}
+.product-card.bundle-card{border-top:2px solid #a78bfa}
+.product-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.product-name{font-size:1rem;font-weight:700;color:#f1f5f9;flex:1;line-height:1.3}
+.badge{padding:3px 10px;border-radius:20px;font-size:.72rem;font-weight:700;margin-left:8px;white-space:nowrap}
+.badge.pending{background:#fef3c720;color:#fbbf24;border:1px solid #fbbf2440}
+.badge.published{background:#d1fae520;color:#34d399;border:1px solid #34d39940}
+.badge.bundle{background:#a78bfa20;color:#a78bfa;border:1px solid #a78bfa40}
+.product-meta{font-size:.8rem;color:#4b5563;margin-bottom:10px;line-height:1.8}
+.product-price{font-size:1.5rem;font-weight:800;color:#a78bfa;margin-bottom:14px}
+.gumroad-link{display:flex;align-items:center;gap:6px;background:#065f4620;border:1px solid #10b98130;border-radius:8px;padding:9px 12px;font-size:.8rem;color:#34d399;text-decoration:none;margin-bottom:12px;word-break:break-all}
+.gumroad-link:hover{background:#065f4640}
+
+/* Feedback section */
+.feedback-section{background:#0f172a;border-radius:10px;padding:12px;margin-bottom:12px}
+.feedback-section h4{font-size:.78rem;color:#4b5563;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.feedback-section select,.feedback-section textarea{width:100%;padding:8px 10px;background:#1f2937;border:1px solid #374151;border-radius:8px;color:#e2e8f0;font-family:inherit;font-size:.83rem;margin-bottom:6px}
+.feedback-section select option{background:#1f2937}
+.feedback-section textarea{min-height:44px;resize:vertical}
+
+/* Action buttons */
+.action-buttons{display:flex;gap:6px}
+.btn{flex:1;padding:11px 6px;border:none;border-radius:10px;font-size:.83rem;font-weight:700;cursor:pointer;transition:.15s;display:flex;align-items:center;justify-content:center;gap:4px}
+.btn:hover{filter:brightness(1.1)}
+.btn:active{transform:scale(.97)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn-publish{background:linear-gradient(135deg,#10b981,#059669);color:white}
+.btn-draft{background:linear-gradient(135deg,#3b82f6,#2563eb);color:white}
+.btn-reject{background:#1f2937;color:#ef4444;border:1px solid #ef444440}
+.btn-marketing{background:#1f2937;color:#a78bfa;border:1px solid #a78bfa40}
+
+/* Marketing indicators */
+.indicators{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.indicator{padding:3px 10px;border-radius:20px;font-size:.72rem;font-weight:600}
+.indicator.active{background:#7c3aed20;color:#a78bfa;border:1px solid #7c3aed40}
+.indicator.inactive{background:#1f2937;color:#374151;border:1px solid #1f2937}
+
+/* Bundle panel */
+.bundle-panel{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:20px;margin-bottom:24px}
+.bundle-panel h2{font-size:1rem;font-weight:700;color:#a78bfa;margin-bottom:16px}
+.bundle-candidate{background:#0f172a;border:1px solid #1f2937;border-radius:10px;padding:14px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.bundle-info{flex:1}
+.bundle-name{font-weight:700;color:#e2e8f0;margin-bottom:4px;font-size:.95rem}
+.bundle-meta{font-size:.8rem;color:#4b5563}
+.bundle-price{text-align:right}
+.bundle-price .old{font-size:.8rem;color:#4b5563;text-decoration:line-through}
+.bundle-price .new{font-size:1.3rem;font-weight:800;color:#34d399}
+.bundle-price .save{font-size:.75rem;color:#a78bfa}
+.btn-create-bundle{padding:8px 18px;background:linear-gradient(135deg,#a78bfa,#7c3aed);color:white;border:none;border-radius:8px;cursor:pointer;font-size:.82rem;font-weight:700;white-space:nowrap}
+.btn-create-bundle:hover{filter:brightness(1.1)}
+
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:flex-start;justify-content:center;z-index:1000;padding:20px;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .2s}
+.modal-overlay.open{opacity:1;pointer-events:all}
+.modal{background:#111827;border:1px solid #374151;border-radius:16px;width:100%;max-width:700px;padding:24px;margin:auto}
+.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.modal-title{font-size:1.1rem;font-weight:700;color:#f1f5f9}
+.modal-close{background:none;border:none;color:#4b5563;font-size:1.2rem;cursor:pointer;padding:4px}
+.modal-close:hover{color:#e2e8f0}
+.modal-tabs{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap}
+.modal-tab{padding:7px 14px;border:1px solid #374151;background:#0f172a;border-radius:8px;cursor:pointer;font-size:.8rem;color:#64748b;transition:.2s}
+.modal-tab.active{background:#7c3aed;border-color:#7c3aed;color:white}
+.modal-content-area{background:#0f172a;border:1px solid #1f2937;border-radius:10px;padding:14px;min-height:200px;max-height:400px;overflow-y:auto}
+.modal-content-area pre{font-family:inherit;font-size:.82rem;color:#94a3b8;white-space:pre-wrap;line-height:1.6}
+.modal-actions{display:flex;gap:8px;margin-top:12px}
+.btn-copy{padding:9px 20px;background:#7c3aed;color:white;border:none;border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:600}
+.btn-copy:hover{background:#6d28d9}
+
+/* Empty state */
+.empty-state{text-align:center;padding:60px 20px;color:#374151}
+.empty-state h2{font-size:1.3rem;color:#4b5563;margin-bottom:8px}
+
+/* Toast */
+.toast{position:fixed;bottom:24px;right:24px;background:#1e293b;color:#e2e8f0;padding:14px 20px;border-radius:10px;font-size:.88rem;box-shadow:0 8px 32px rgba(0,0,0,.6);z-index:9999;max-width:360px;opacity:0;transform:translateY(10px);transition:all .3s;pointer-events:none}
+.toast.show{opacity:1;transform:translateY(0)}
+.toast.success{border-left:3px solid #10b981}
+.toast.error{border-left:3px solid #ef4444}
+.toast.info{border-left:3px solid #60a5fa}
+
+/* Spinner */
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.3);border-radius:50%;border-top-color:white;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>AETERNA</h1>
+  <p>Gumroad Revenue Dashboard — 承認ボタン1クリックで出品 + Pinterest自動投稿 + マーケティング生成</p>
+</header>
+
+<!-- Status bar -->
+<div class="status-bar" id="status-bar">
+  <div class="status-left">
+    <div class="status-dot" id="status-dot"></div>
+    <span class="status-label" id="status-label">接続確認中...</span>
+  </div>
+  <div class="header-btns">
+    <button class="header-btn" onclick="loadAll()">更新</button>
+    <button class="header-btn primary" onclick="showBundlePanel()">バンドル作成</button>
+  </div>
+</div>
+
+<!-- KPI cards -->
+<div class="kpi-grid">
+  <div class="kpi"><h3>合計商品</h3><div class="num" id="kpi-total">—</div></div>
+  <div class="kpi"><h3>承認待ち</h3><div class="num yellow" id="kpi-pending">—</div></div>
+  <div class="kpi"><h3>出品済み</h3><div class="num green" id="kpi-published">—</div></div>
+  <div class="kpi"><h3>Pinterest投稿</h3><div class="num purple" id="kpi-pins">—</div></div>
+  <div class="kpi"><h3>MKT生成済み</h3><div class="num blue" id="kpi-mkt">—</div></div>
+  <div class="kpi"><h3>売上合計</h3><div class="num green" id="kpi-revenue">—</div></div>
+</div>
+
+<!-- Tab navigation -->
+<div class="tabs">
+  <button class="tab active" id="tab-pending"   onclick="switchMainTab('pending')">承認待ち</button>
+  <button class="tab"        id="tab-published"  onclick="switchMainTab('published')">出品済み</button>
+  <button class="tab"        id="tab-bundle"     onclick="switchMainTab('bundle')">バンドル商品</button>
+  <button class="tab"        id="tab-all"        onclick="switchMainTab('all')">全商品</button>
+</div>
+
+<!-- Products grid -->
+<div id="products-container" class="products-grid"></div>
+<div id="empty-state" class="empty-state" style="display:none">
+  <h2>商品がありません</h2>
+  <p>python main.py を実行して商品を生成してください</p>
+</div>
+
+<!-- Bundle panel -->
+<div id="bundle-overlay" class="modal-overlay">
+  <div class="modal" style="max-width:860px">
+    <div class="modal-header">
+      <span class="modal-title">バンドル商品を作成する</span>
+      <button class="modal-close" onclick="closeBundlePanel()">✕</button>
+    </div>
+    <p style="color:#64748b;font-size:.85rem;margin-bottom:16px">
+      複数の商品を1つのバンドルにまとめて高単価で販売。個別購入より割安感を演出します。
+    </p>
+    <div id="bundle-list">読み込み中...</div>
+  </div>
+</div>
+
+<!-- Marketing modal -->
+<div id="mkt-modal" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title" id="mkt-modal-title">マーケティングコンテンツ</span>
+      <button class="modal-close" onclick="closeMktModal()">✕</button>
+    </div>
+    <div class="modal-tabs">
+      <button class="modal-tab active" onclick="switchMktTab('reddit',this)">Reddit</button>
+      <button class="modal-tab" onclick="switchMktTab('twitter',this)">Twitter/X</button>
+      <button class="modal-tab" onclick="switchMktTab('email',this)">Email</button>
+      <button class="modal-tab" onclick="switchMktTab('seo',this)">SEO</button>
+    </div>
+    <div class="modal-content-area"><pre id="mkt-content">読み込み中...</pre></div>
+    <div class="modal-actions">
+      <button class="btn-copy" onclick="copyMktContent()">コピー</button>
+      <button class="btn-copy" style="background:#1f2937;color:#94a3b8" onclick="closeMktModal()">閉じる</button>
+    </div>
+  </div>
+</div>
+
+</div><!-- /container -->
+<div class="toast" id="toast"></div>
+
+<script>
+const API = 'http://localhost:8001/api';
+let allProducts = [];
+let currentTab  = 'pending';
+let mktData     = {};
+let mktTab      = 'reddit';
+
+// ── Toast ──────────────────────────────────────────────────────────────────
+function toast(msg, type='success') {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = `toast show ${type}`;
+  setTimeout(()=>{ el.className='toast'; }, 4000);
+}
+
+// ── Utilities ──────────────────────────────────────────────────────────────
+function fmt(spec) {
+  if (spec.price_jpy) return `¥${Number(spec.price_jpy).toLocaleString()}`;
+  if (spec.price_usd) return `$${spec.price_usd}`;
+  if (spec.price)     return `$${spec.price}`;
+  return '$?';
+}
+
+// ── Server status ──────────────────────────────────────────────────────────
+async function checkServer() {
+  const bar   = document.getElementById('status-bar');
+  const dot   = document.getElementById('status-dot');
+  const label = document.getElementById('status-label');
+  try {
+    await fetch(`${API}/health`);
+    bar.classList.add('online');
+    dot.className = 'status-dot green';
+    label.textContent = 'サーバー オンライン ✓';
+    return true;
+  } catch {
+    dot.className = 'status-dot';
+    label.textContent = 'オフライン — bash start_dashboard.sh を実行してください';
+    return false;
+  }
+}
+
+// ── KPI stats ──────────────────────────────────────────────────────────────
+async function loadStats() {
+  try {
+    const r = await fetch(`${API}/stats`);
+    const d = await r.json();
+    document.getElementById('kpi-total').textContent     = d.total_products ?? '—';
+    document.getElementById('kpi-pending').textContent   = d.pending_approval ?? '—';
+    document.getElementById('kpi-published').textContent = d.published ?? '—';
+    document.getElementById('kpi-pins').textContent      = d.pinterest_pins ?? '—';
+    document.getElementById('kpi-mkt').textContent       = d.marketing_ready ?? '—';
+    document.getElementById('kpi-revenue').textContent   = d.total_revenue > 0 ? `¥${d.total_revenue.toLocaleString()}` : '—';
+  } catch {}
+}
+
+// ── Products ───────────────────────────────────────────────────────────────
+async function loadProducts() {
+  try {
+    const r = await fetch(`${API}/products`);
+    const d = await r.json();
+    allProducts = d.products || [];
+  } catch {
+    allProducts = [];
+  }
+  renderProducts();
+}
+
+function switchMainTab(tab) {
+  currentTab = tab;
+  ['pending','published','bundle','all'].forEach(t => {
+    document.getElementById(`tab-${t}`).classList.toggle('active', t === tab);
+  });
+  renderProducts();
+}
+
+function renderProducts() {
+  let list = allProducts;
+  if (currentTab === 'pending')   list = list.filter(p => !p._published && !p.is_bundle);
+  if (currentTab === 'published') list = list.filter(p => p._published);
+  if (currentTab === 'bundle')    list = list.filter(p => p.is_bundle);
+
+  const grid  = document.getElementById('products-container');
+  const empty = document.getElementById('empty-state');
+  grid.innerHTML = '';
+
+  if (!list.length) {
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  list.forEach(spec => grid.appendChild(createCard(spec)));
+}
+
+function createCard(spec) {
+  const id        = String(spec.product_id || 'unknown');
+  const dir       = String(spec._directory  || spec.product_id || '');
+  const published = !!spec._published;
+  const isBundle  = !!spec.is_bundle;
+  const price     = fmt(spec);
+
+  const card = document.createElement('div');
+  card.id        = `card-${id}`;
+  card.className = `product-card ${isBundle ? 'bundle-card' : (published ? 'published' : 'pending')}`;
+
+  const hasMkt = false; // will be loaded lazily if needed
+
+  card.innerHTML = `
+    <div class="product-header">
+      <div class="product-name">${esc(spec.name || '商品名なし')}</div>
+      <span class="badge ${isBundle ? 'bundle' : (published ? 'published' : 'pending')}">
+        ${isBundle ? 'BUNDLE' : (published ? '出品済み' : '承認待ち')}
+      </span>
+    </div>
+    <div class="product-meta">
+      ${spec.category || '—'} › ${spec.subcategory || '—'}<br>
+      種別: ${(spec.product_type||'—').replace(/_/g,' ')} &nbsp;|&nbsp; スコア: ${spec.trend_score||0}
+    </div>
+    <div class="product-price">${price}</div>
+
+    ${published && spec._gumroad_id ? `
+      <a class="gumroad-link" href="https://app.gumroad.com/products/${spec._gumroad_id}" target="_blank">
+        Gumroadで確認 →
+      </a>
+    ` : ''}
+
+    ${!published ? `
+      <div class="feedback-section">
+        <h4>フィードバック（任意）</h4>
+        <select id="reason-${id}">
+          <option value="">理由を選択...</option>
+          <option value="great_topic">需要が高い良いテーマ</option>
+          <option value="good_content">コンテンツ品質が良い</option>
+          <option value="good_price">価格設定が適切</option>
+          <option value="too_boring">需要が低そう</option>
+          <option value="poor_content">コンテンツ品質が低い</option>
+          <option value="duplicate">似た商品が既にある</option>
+        </select>
+        <textarea id="notes-${id}" placeholder="メモ（任意）"></textarea>
+      </div>
+      <div class="action-buttons">
+        <button class="btn btn-publish" id="btn-pub-${id}"  onclick="doApprove('${id}','${dir}',true)">出品</button>
+        <button class="btn btn-draft"   id="btn-draft-${id}" onclick="doApprove('${id}','${dir}',false)">下書き</button>
+        <button class="btn btn-reject"  id="btn-rej-${id}"  onclick="doReject('${id}','${dir}')">却下</button>
+      </div>
+    ` : ''}
+
+    <div class="indicators" style="margin-top:10px">
+      <span class="indicator inactive" id="ind-pin-${id}">Pinterest —</span>
+      <span class="indicator inactive" id="ind-mkt-${id}">MKT —</span>
+    </div>
+    ${published ? `
+      <div style="margin-top:10px">
+        <button class="btn btn-marketing" style="flex:none;width:100%;padding:9px" onclick="openMktModal('${id}','${esc(spec.name)}')">
+          マーケティングコンテンツを見る
+        </button>
+      </div>
+    ` : ''}
+  `;
+
+  // Load pin/mkt status in background
+  if (published) loadIndicators(id, spec.product_id);
+
+  return card;
+}
+
+async function loadIndicators(cardId, productId) {
+  try {
+    const r = await fetch(`${API}/marketing/${productId}`);
+    const d = await r.json();
+    const pinEl = document.getElementById(`ind-pin-${cardId}`);
+    const mktEl = document.getElementById(`ind-mkt-${cardId}`);
+    if (pinEl && d.pinterest && d.pinterest.pins && d.pinterest.pins.length > 0) {
+      pinEl.textContent = `Pinterest ✓ (${d.pinterest.pins.length}ピン)`;
+      pinEl.className = 'indicator active';
+    }
+    if (mktEl && d.content && Object.keys(d.content).length > 0) {
+      mktEl.textContent = 'MKT ✓';
+      mktEl.className = 'indicator active';
+    }
+  } catch {}
+}
+
+// ── Approve / Reject ───────────────────────────────────────────────────────
+function setLoading(id, on) {
+  ['pub','draft','rej'].forEach(k => {
+    const b = document.getElementById(`btn-${k}-${id}`);
+    if (b) b.disabled = on;
+  });
+  const pb = document.getElementById(`btn-pub-${id}`);
+  if (pb) pb.innerHTML = on ? '<span class="spinner"></span>' : '出品';
+}
+
+async function doApprove(productId, productDir, publish) {
+  const reason = document.getElementById(`reason-${productId}`)?.value || '';
+  const notes  = document.getElementById(`notes-${productId}`)?.value  || '';
+  setLoading(productId, true);
+  try {
+    const res  = await fetch(`${API}/approve`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({product_dir:productDir, publish, reason, notes})
+    });
+    const data = await res.json();
+    if (data.success) {
+      const editUrl = data.gumroad_edit_url || '';
+      const files   = data.upload_pending || [];
+      if (files.length > 0 && editUrl) {
+        const fileList = files.join(', ');
+        const msg = `${publish?'出品完了!':'下書き保存!'}\n\n⚠ ファイルを手動アップロードしてください:\n${fileList}\n\n→ ${editUrl}`;
+        if (confirm(msg + '\n\nGumroad編集ページを開きますか?')) {
+          window.open(editUrl, '_blank');
+        }
+      } else {
+        toast(`${publish?'出品完了!':'下書き保存!'} Pinterest投稿 + MKT生成をバックグラウンドで実行中...`, 'success');
+      }
+      await loadAll();
+    } else {
+      toast(`エラー: ${data.error}`, 'error');
+      setLoading(productId, false);
+    }
+  } catch(e) {
+    toast(`通信エラー: ${e.message}`, 'error');
+    setLoading(productId, false);
+  }
+}
+
+async function doReject(productId, productDir) {
+  const reason = document.getElementById(`reason-${productId}`)?.value || '';
+  const notes  = document.getElementById(`notes-${productId}`)?.value  || '';
+  try {
+    await fetch(`${API}/reject`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({product_dir:productDir, reason, notes})
+    });
+    toast('却下しました', 'info');
+    document.getElementById(`card-${productId}`)?.remove();
+  } catch(e) {
+    toast(`エラー: ${e.message}`, 'error');
+  }
+}
+
+// ── Marketing modal ────────────────────────────────────────────────────────
+async function openMktModal(productId, name) {
+  document.getElementById('mkt-modal-title').textContent = name;
+  document.getElementById('mkt-modal').classList.add('open');
+  document.getElementById('mkt-content').textContent = '読み込み中...';
+  mktData = {};
+  try {
+    const r = await fetch(`${API}/marketing/${productId}`);
+    const d = await r.json();
+    mktData = d.content || {};
+    renderMktContent();
+  } catch(e) {
+    document.getElementById('mkt-content').textContent = `エラー: ${e.message}`;
+  }
+}
+
+function closeMktModal() {
+  document.getElementById('mkt-modal').classList.remove('open');
+}
+
+function switchMktTab(tab, btn) {
+  mktTab = tab;
+  document.querySelectorAll('.modal-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderMktContent();
+}
+
+function renderMktContent() {
+  const el = document.getElementById('mkt-content');
+  const content = mktData[mktTab];
+  if (!content) {
+    el.textContent = 'コンテンツがまだありません。商品を出品すると自動生成されます。';
+  } else {
+    el.textContent = content;
+  }
+}
+
+function copyMktContent() {
+  const el = document.getElementById('mkt-content');
+  navigator.clipboard.writeText(el.textContent).then(() => {
+    toast('コピーしました!', 'success');
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = el.textContent;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    toast('コピーしました!', 'success');
+  });
+}
+
+// ── Bundle panel ───────────────────────────────────────────────────────────
+async function showBundlePanel() {
+  document.getElementById('bundle-overlay').classList.add('open');
+  document.getElementById('bundle-list').innerHTML = '読み込み中...';
+  try {
+    const r = await fetch(`${API}/bundles`);
+    const d = await r.json();
+    const list = document.getElementById('bundle-list');
+    if (!d.candidates || !d.candidates.length) {
+      list.innerHTML = '<p style="color:#4b5563">バンドル候補なし（出品済み商品が必要）</p>';
+      return;
+    }
+    list.innerHTML = d.candidates.map(c => `
+      <div class="bundle-candidate">
+        <div class="bundle-info">
+          <div class="bundle-name">${esc(c.bundle_name)}</div>
+          <div class="bundle-meta">${c.product_count}商品 | 個別計: $${c.individual_total}</div>
+          <div style="margin-top:6px;font-size:.78rem;color:#374151">
+            ${c.products.map(p=>`• ${esc(p.name)}`).join('<br>')}
+          </div>
+        </div>
+        <div class="bundle-price">
+          <div class="old">$${c.individual_total}</div>
+          <div class="new">$${c.bundle_price}</div>
+          <div class="save">${c.discount_pct}% OFF — $${c.savings}節約</div>
+          <button class="btn-create-bundle" style="margin-top:8px" onclick="createBundle('${esc(c.bundle_name)}')">
+            作成する
+          </button>
+        </div>
+      </div>
+    `).join('');
+  } catch(e) {
+    document.getElementById('bundle-list').innerHTML = `<p style="color:#ef4444">エラー: ${e.message}</p>`;
+  }
+}
+
+function closeBundlePanel() {
+  document.getElementById('bundle-overlay').classList.remove('open');
+}
+
+async function createBundle(bundleName) {
+  toast('バンドル作成中...', 'info');
+  try {
+    const r = await fetch(`${API}/bundles/create`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({bundle_name: bundleName})
+    });
+    const d = await r.json();
+    if (d.success) {
+      toast(`バンドル作成完了: ${d.bundle.name} ($${d.bundle.price_usd})`, 'success');
+      closeBundlePanel();
+      await loadAll();
+    } else {
+      toast(`エラー: ${d.error}`, 'error');
+    }
+  } catch(e) {
+    toast(`エラー: ${e.message}`, 'error');
+  }
+}
+
+// Close modals on overlay click
+document.getElementById('bundle-overlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('bundle-overlay')) closeBundlePanel();
+});
+document.getElementById('mkt-modal').addEventListener('click', e => {
+  if (e.target === document.getElementById('mkt-modal')) closeMktModal();
+});
+
+// ── Utils ──────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
+async function loadAll() {
+  await checkServer();
+  await Promise.all([loadProducts(), loadStats()]);
+}
+
+loadAll();
+setInterval(checkServer, 30000);
+</script>
+</body>
+</html>

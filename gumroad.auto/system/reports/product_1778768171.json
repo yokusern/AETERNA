@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-05-14T23:16:11.380169",
+  "idea": {
+    "id": "product_1778768170",
+    "theme": "JavaScript for Beginners",
+    "category": "Programming",
+    "subcategory": "JavaScript",
+    "product_type": "ebook",
+    "price": 16,
+    "trend_score": 88,
+    "created_at": "2026-05-14T23:16:10.923557"
+  },
+  "product_dir": "/Users/onoyoukou/Desktop/会社作ろうか/AETERNA/gumroad.auto/products/product_1778768170",
+  "gumroad_result": {
+    "success": false,
+    "error": "商品作成エラー: {'success': False, 'message': 'Sorry, a product must be at least ¥99.'}"
+  }
+}
