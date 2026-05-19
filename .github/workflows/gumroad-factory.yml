@@ -54,16 +54,16 @@ jobs:
           source venv/bin/activate
           python batch_publish.py --limit 10
 
-      - name: Commit & push (covers + registry)
+      - name: Pin published products to Pinterest
+        run: |
+          cd gumroad.auto
+          source venv/bin/activate
+          python auto_pin.py || echo "Pinterest pinning completed (with possible errors)"
+
+      - name: Commit & push
         run: |
           git config user.email "aeterna-bot@github.com"
           git config user.name "AETERNA Bot"
           git add gumroad.auto/products/ gumroad.auto/data/
           git diff --staged --quiet || git commit -m "auto: daily product factory $(date +'%Y-%m-%d')"
           git push
-
-      - name: Pin published products to Pinterest
-        run: |
-          cd gumroad.auto
-          source venv/bin/activate
-          python auto_pin.py || echo "Pinterest pinning completed (with possible errors)"

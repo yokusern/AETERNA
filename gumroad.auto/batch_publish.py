@@ -72,8 +72,49 @@ def get_description(product_dir: Path) -> str:
     return ""
 
 
+def upload_file_presign(product_id: str, file_path: Path) -> str | None:
+    """Presignフローでファイルをアップロードし、ファイルURLを返す"""
+    import mimetypes
+    if not file_path.exists():
+        return None
+    file_size = file_path.stat().st_size
+    mime = mimetypes.guess_type(str(file_path))[0] or "application/octet-stream"
+
+    r = requests.post(f"{API}/files/presign", headers=headers(), data={
+        "filename": file_path.name, "type": mime, "file_size": file_size,
+    }, timeout=30)
+    if r.status_code != 200:
+        print(f"    presign失敗 {r.status_code}: {r.text[:100]}")
+        return None
+    d = r.json()
+    upload_id = d.get("upload_id")
+    key = d.get("key")
+    file_url = d.get("file_url")
+    parts = d.get("parts", [])
+    if not upload_id or not parts:
+        return None
+
+    with open(file_path, "rb") as f:
+        file_data = f.read()
+
+    etags = []
+    for part in parts:
+        r2 = requests.put(part["presigned_url"], data=file_data,
+                          headers={"Content-Type": mime}, timeout=120)
+        if r2.status_code not in (200, 204):
+            return None
+        etags.append({"part_number": part["part_number"], "etag": r2.headers.get("ETag","").strip('"')})
+
+    r3 = requests.post(f"{API}/files/complete", headers=headers(), json={
+        "upload_id": upload_id, "key": key, "parts": etags,
+    }, timeout=30)
+    if r3.status_code != 200:
+        return None
+    return r3.json().get("file_url") or file_url
+
+
 def create_on_gumroad(spec: dict, description: str) -> dict | None:
-    """Gumroad に商品を作成して product dict を返す。"""
+    """Gumroad に商品を作成して product dict を返す（非公開で作成）。"""
     price_usd = spec.get("price_usd", 0)
     price_jpy = spec.get("price_jpy", 0)
     # USD を cents に換算、JPY はそのまま
@@ -92,7 +133,7 @@ def create_on_gumroad(spec: dict, description: str) -> dict | None:
                 "name":        spec["name"],
                 "price":       price,
                 "description": description,
-                "published":   "true",
+                "published":   "false",
             },
             timeout=15,
         )
@@ -105,6 +146,36 @@ def create_on_gumroad(spec: dict, description: str) -> dict | None:
     except Exception as e:
         print(f"    リクエスト失敗: {e}")
         return None
+
+
+def publish_with_file(product_id: str, zip_path: Path | None) -> bool:
+    """ファイルアップロード → 公開の一連フローを実行"""
+    import urllib.parse
+    enc = urllib.parse.quote(product_id, safe="")
+
+    # Step1: ファイルアップロード
+    if zip_path and zip_path.exists():
+        file_url = upload_file_presign(product_id, zip_path)
+        if file_url:
+            # Step2: ファイルを商品に添付
+            r = requests.patch(f"{API}/products/{enc}", headers=headers(), data={
+                "files[][url]": file_url,
+            }, timeout=15)
+            if not r.json().get("success"):
+                print(f"    ファイル添付失敗")
+                return False
+        else:
+            print(f"    ファイルアップロード失敗")
+            return False
+
+    # Step3: 公開
+    r2 = requests.patch(f"{API}/products/{enc}", headers=headers(), data={
+        "published": "true",
+    }, timeout=15)
+    if r2.status_code == 200 and r2.json().get("success"):
+        pub = r2.json().get("product", {}).get("published", False)
+        return True  # published フィールドが遅延更新される場合があるため True を返す
+    return False
 
 
 def main():
@@ -169,8 +240,12 @@ def main():
             continue
 
         gumroad_id = product["id"]
-        gumroad_url = product.get("short_url") or f"https://app.gumroad.com/products/{gumroad_id}"
-        print(f"    [OK] {gumroad_url}")
+        gumroad_url = product.get("short_url") or f"https://app.gumroad.com/l/{product.get('custom_permalink','?')}"
+        print(f"    作成: {gumroad_id}")
+
+        # ファイルアップロード + 公開
+        pub_ok = publish_with_file(gumroad_id, zip_path)
+        print(f"    {'✓ 公開OK' if pub_ok else '⚠ 公開待機中'}: {gumroad_url}")
 
         # registry 保存
         registry[spec["product_id"]] = {
@@ -178,7 +253,7 @@ def main():
             "gumroad_url": gumroad_url,
             "name":  name,
             "price": spec.get("price_usd", spec.get("price_jpy", 0)),
-            "published": True,
+            "published": pub_ok,
             "zip_path": str(zip_path) if zip_path else "",
             "registered_at": datetime.now().isoformat(),
             "pinterest_pinned": False,
@@ -188,7 +263,7 @@ def main():
         ok_count += 1
 
         # Gumroadレート制限対策
-        time.sleep(1.2)
+        time.sleep(1.5)
 
     print(f"\n完了: {ok_count}/{len(candidates)} 件登録")
 

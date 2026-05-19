@@ -84,7 +84,10 @@ def main():
     pinned = 0
     for pid, entry in targets:
         content = build_pin_content(entry)
-        image_url = get_cover_image(pid) or DEFAULT_IMAGE_URL
+        image_url = get_cover_image(pid)
+        if not image_url:
+            print(f"  ⚠ {entry['name'][:40]} — カバー画像なし、スキップ")
+            continue
 
         try:
             pin = client.create_pin(
