@@ -20,7 +20,22 @@ REGISTRY_FILE = BASE_DIR / "data" / "products" / "registry.json"
 PRODUCTS_DIR  = BASE_DIR / "products"
 
 # GitHub raw URL（コミット後に有効になる）
-GITHUB_RAW = "https://raw.githubusercontent.com/yokusern/AETERNA/main/gumroad.auto/products"
+GITHUB_RAW_ASSETS = "https://raw.githubusercontent.com/yokusern/AETERNA/main/gumroad.auto/production_assets"
+GITHUB_RAW_PRODUCTS = "https://raw.githubusercontent.com/yokusern/AETERNA/main/gumroad.auto/products"
+
+# 商品ID → カバー画像ファイル名のマッピング
+COVER_MAP = {
+    "product_1778767916":        "notion_templates.png",
+    "product_1778767914":        "quick_start_uiux.png",
+    "habit_spreadsheet_1778936013": "habit_tracker.png",
+    "goal_planner_1778936017":   "goal_planner.png",
+    "freelance_tracker_1778936015": "freelance_tracker.png",
+    "freelance_toolkit_001":     "freelancer_toolkit.png",
+    "freelance_launch_kit_1778937035": "freelance_launch.png",
+    "freelance_calc_1778936018": "freelance_calc.png",
+    "freelance_biz_1778936022":  "freelance_bundle.png",
+    "content_os_1778936027":     "content_creator_os.png",
+}
 
 
 def load_registry() -> dict:
@@ -35,11 +50,15 @@ def save_registry(reg: dict):
 
 
 def get_cover_image(product_id: str) -> str | None:
-    """GitHub raw URL でカバー画像を返す（Actions実行時はコミット済みなので有効）"""
+    """GitHub raw URL でカバー画像を返す"""
+    # production_assetsのマッピングから先に探す
+    if product_id in COVER_MAP:
+        return f"{GITHUB_RAW_ASSETS}/{COVER_MAP[product_id]}"
+    # fallback: 旧来のproducts/フォルダ内cover画像
     for ext in ("png", "jpg", "jpeg", "webp"):
         path = PRODUCTS_DIR / product_id / f"cover.{ext}"
         if path.exists():
-            return f"{GITHUB_RAW}/{product_id}/cover.{ext}"
+            return f"{GITHUB_RAW_PRODUCTS}/{product_id}/cover.{ext}"
     return None
 
 
