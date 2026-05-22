@@ -218,5 +218,105 @@
     "published": true,
     "registered_at": "2026-05-20T18:39:15.429615",
     "pinterest_pinned": false
+  },
+  "ai_art_prompts_1778936031": {
+    "gumroad_product_id": "rxlzqXqoYH1_8nnu1V4GgQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/ytjtp",
+    "name": "Midjourney Prompt Pack — 200 Premium Prompts",
+    "price": 12,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/ai_art_prompts_1778936031/ai_art_prompts_1778936031.zip",
+    "registered_at": "2026-05-22T03:28:14.870486",
+    "pinterest_pinned": false
+  },
+  "ai_writing_prompts_1778937044": {
+    "gumroad_product_id": "wVEGJqUBtR33oALDf0cbQg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/jconi",
+    "name": "AI Writing Prompt Pack — 100 Prompts for Bloggers & Writers",
+    "price": 14,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/ai_writing_prompts_1778937044/ai_writing_prompts_1778937044.zip",
+    "registered_at": "2026-05-22T03:28:17.718597",
+    "pinterest_pinned": false
+  },
+  "biz_os_1778936028": {
+    "gumroad_product_id": "AjfxISfiJ-AZV37lMKGkeg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/jvycul",
+    "name": "Business Owner OS — Manage Everything",
+    "price": 22,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/biz_os_1778936028/biz_os_1778936028.zip",
+    "registered_at": "2026-05-22T03:28:20.512928",
+    "pinterest_pinned": false
+  },
+  "chatgpt_500_1778937036": {
+    "gumroad_product_id": "e7YGClpGej1FbUL_Q9ymKg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/rcwzks",
+    "name": "500 ChatGPT Prompts for Business, Marketing & Content",
+    "price": 17,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/chatgpt_500_1778937036/chatgpt_500_1778937036.zip",
+    "registered_at": "2026-05-22T03:28:23.262499",
+    "pinterest_pinned": false
+  },
+  "email_templates_1778936023": {
+    "gumroad_product_id": "ZxPQCnblxiGyW1Aq6VDRSg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/eqovtg",
+    "name": "Email Marketing Template Kit",
+    "price": 17,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/email_templates_1778936023/email_templates_1778936023.zip",
+    "registered_at": "2026-05-22T03:28:26.022949",
+    "pinterest_pinned": false
+  },
+  "notion_content_os_1778937037": {
+    "gumroad_product_id": "bfKiEMjVDvSoSCCRTt0HWQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/gsipfa",
+    "name": "Content Creator OS — Notion Template for YouTubers & TikTokers",
+    "price": 19,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/notion_content_os_1778937037/notion_content_os_1778937037.zip",
+    "registered_at": "2026-05-22T03:28:28.899701",
+    "pinterest_pinned": false
+  },
+  "product_1778767918": {
+    "gumroad_product_id": "yOqcx78WiF-5uNx9Rmxp9g==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/dwujdr",
+    "name": "Business Models for Beginners",
+    "price": 15,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767918/product_1778767918.zip",
+    "registered_at": "2026-05-22T03:28:31.799898",
+    "pinterest_pinned": false
+  },
+  "product_1778767920": {
+    "gumroad_product_id": "l-FtdYZJDTH0V4i5GglI7w==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/rnjtxv",
+    "name": "JavaScript Essentials",
+    "price": 21,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767920/product_1778767920.zip",
+    "registered_at": "2026-05-22T03:28:34.822654",
+    "pinterest_pinned": false
+  },
+  "product_1778767922": {
+    "gumroad_product_id": "tLGDv6swAjgXOxhyQbLl7w==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/pihjdt",
+    "name": "Quick Start Side Hustle",
+    "price": 14,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767922/product_1778767922.zip",
+    "registered_at": "2026-05-22T03:28:37.664485",
+    "pinterest_pinned": false
+  },
+  "product_1778767941": {
+    "gumroad_product_id": "NAQ7qcub_C721ixkGPK-KQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/xvdojh",
+    "name": "Practical React Handbook",
+    "price": 26,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767941/product_1778767941.zip",
+    "registered_at": "2026-05-22T03:28:40.392091",
+    "pinterest_pinned": false
   }
 }
