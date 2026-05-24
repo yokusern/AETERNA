@@ -318,5 +318,105 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767941/product_1778767941.zip",
     "registered_at": "2026-05-22T03:28:40.392091",
     "pinterest_pinned": false
+  },
+  "product_1778767943": {
+    "gumroad_product_id": "7eysNv1iRUvNZteKans2-g==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/szatw",
+    "name": "Complete Business Models Guide",
+    "price": 18,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767943/product_1778767943.zip",
+    "registered_at": "2026-05-24T03:24:51.813006",
+    "pinterest_pinned": false
+  },
+  "product_1778767947": {
+    "gumroad_product_id": "auU41capE_CanilPivjkkw==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/dcxkla",
+    "name": "Master Notion Templates",
+    "price": 8,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767947/product_1778767947.zip",
+    "registered_at": "2026-05-24T03:24:54.333444",
+    "pinterest_pinned": false
+  },
+  "product_1778767949": {
+    "gumroad_product_id": "n5jbvbQh_iQmu7iiVrYrRA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/umvllk",
+    "name": "Prompt Engineering Essentials",
+    "price": 19,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767949/product_1778767949.zip",
+    "registered_at": "2026-05-24T03:24:57.048784",
+    "pinterest_pinned": false
+  },
+  "product_1778767978": {
+    "gumroad_product_id": "HPnbpcGejv9GIBq6HpPOIQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/kphtw",
+    "name": "Quick Start Freelancing",
+    "price": 10,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767978/product_1778767978.zip",
+    "registered_at": "2026-05-24T03:24:59.706714",
+    "pinterest_pinned": false
+  },
+  "product_1778767980": {
+    "gumroad_product_id": "GtNo8jzkb5LQsm-Nly5Y3g==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/cdtny",
+    "name": "Notion Templates Made Easy",
+    "price": 8,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767980/product_1778767980.zip",
+    "registered_at": "2026-05-24T03:25:03.075522",
+    "pinterest_pinned": false
+  },
+  "product_1778767982": {
+    "gumroad_product_id": "EuXAm68QSydewDQF3AaGhg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/irjdbr",
+    "name": "Complete JavaScript Guide",
+    "price": 17,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767982/product_1778767982.zip",
+    "registered_at": "2026-05-24T03:25:05.759929",
+    "pinterest_pinned": false
+  },
+  "product_1778767984": {
+    "gumroad_product_id": "eZEx1rfnNEgNGAus22ZpkQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/ukiswk",
+    "name": "Practical UI/UX Handbook",
+    "price": 24,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767984/product_1778767984.zip",
+    "registered_at": "2026-05-24T03:25:08.453531",
+    "pinterest_pinned": false
+  },
+  "product_1778767986": {
+    "gumroad_product_id": "9-dPG0mc76p0S7js_dDlOQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/ylwkt",
+    "name": "Practical Side Hustle Handbook",
+    "price": 7,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778767986/product_1778767986.zip",
+    "registered_at": "2026-05-24T03:25:11.162324",
+    "pinterest_pinned": false
+  },
+  "product_1778768170": {
+    "gumroad_product_id": "cu4L22pr89WVOEC7yu3iUg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/cprgp",
+    "name": "JavaScript for Beginners",
+    "price": 16,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778768170/product_1778768170.zip",
+    "registered_at": "2026-05-24T03:25:13.794807",
+    "pinterest_pinned": false
+  },
+  "product_1778768574": {
+    "gumroad_product_id": "OmtM-GKas3y8g4Gjobj4hQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/irpqz",
+    "name": "Side Hustle Essentials",
+    "price": 15,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1778768574/product_1778768574.zip",
+    "registered_at": "2026-05-24T03:25:16.585357",
+    "pinterest_pinned": false
   }
 }
