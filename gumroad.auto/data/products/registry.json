@@ -718,5 +718,105 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779420491/product_1779420491.zip",
     "registered_at": "2026-05-29T02:58:55.391451",
     "pinterest_pinned": false
+  },
+  "product_1779504437": {
+    "gumroad_product_id": "Z7HjHZX1wB-sa1CPLx9Q8Q==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/woobbn",
+    "name": "Master ChatGPT Prompts",
+    "price": 19,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779504437/product_1779504437.zip",
+    "registered_at": "2026-05-31T03:36:08.894962",
+    "pinterest_pinned": false
+  },
+  "product_1779504445": {
+    "gumroad_product_id": "h732mwd3szBQwUNogbMUxA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/zmacv",
+    "name": "Prompt Engineering Blueprint",
+    "price": 18,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779504445/product_1779504445.zip",
+    "registered_at": "2026-05-31T03:36:11.542588",
+    "pinterest_pinned": false
+  },
+  "product_1779504447": {
+    "gumroad_product_id": "FBkG-hSEShcUpGvztXu0lw==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/qviom",
+    "name": "Complete Content Creator OS Guide",
+    "price": 21,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779504447/product_1779504447.zip",
+    "registered_at": "2026-05-31T03:36:14.205891",
+    "pinterest_pinned": false
+  },
+  "product_1779593078": {
+    "gumroad_product_id": "02Indm-o1P8nBOPuEnhyBg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/fkiyry",
+    "name": "Budget Tracker Essentials",
+    "price": 12,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779593078/product_1779593078.zip",
+    "registered_at": "2026-05-31T03:36:16.773962",
+    "pinterest_pinned": false
+  },
+  "product_1779593087": {
+    "gumroad_product_id": "QWh8dO5EhquUtkfm09VkCg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/amhhny",
+    "name": "Quick Start Python Automation",
+    "price": 18,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779593087/product_1779593087.zip",
+    "registered_at": "2026-05-31T03:36:20.306406",
+    "pinterest_pinned": false
+  },
+  "product_1779680175": {
+    "gumroad_product_id": "-sE6pMOF25-7lDwqUMq5ig==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/kaobha",
+    "name": "Freelance Templates Made Easy",
+    "price": 23,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779680175/product_1779680175.zip",
+    "registered_at": "2026-05-31T03:36:22.953514",
+    "pinterest_pinned": false
+  },
+  "product_1779680178": {
+    "gumroad_product_id": "Pi4r1lOuHFSpK_bq4FYjFQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/hugak",
+    "name": "Quick Start Data Analysis",
+    "price": 21,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779680178/product_1779680178.zip",
+    "registered_at": "2026-05-31T03:36:25.637805",
+    "pinterest_pinned": false
+  },
+  "product_1779680181": {
+    "gumroad_product_id": "pbK6mmHaWV00uFgEnqmbbw==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/lohsf",
+    "name": "Complete Prompt Engineering Guide",
+    "price": 19,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779680181/product_1779680181.zip",
+    "registered_at": "2026-05-31T03:36:28.190855",
+    "pinterest_pinned": false
+  },
+  "product_1779680183": {
+    "gumroad_product_id": "VjtqtkSyrdwDh7BhIEEzAQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/mtwgtz",
+    "name": "Study OS Blueprint",
+    "price": 20,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779680183/product_1779680183.zip",
+    "registered_at": "2026-05-31T03:36:30.766701",
+    "pinterest_pinned": false
+  },
+  "product_1779764126": {
+    "gumroad_product_id": "8aVE9uf7MA8LB-qoWWtpKA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/iizgon",
+    "name": "Practical Email Marketing Handbook",
+    "price": 18,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1779764126/product_1779764126.zip",
+    "registered_at": "2026-05-31T03:36:33.384993",
+    "pinterest_pinned": false
   }
 }
