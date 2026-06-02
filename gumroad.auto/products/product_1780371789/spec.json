@@ -1,0 +1,11 @@
+{
+  "product_id": "product_1780371789",
+  "name": "Quick Start Freelancing",
+  "category": "Business",
+  "subcategory": "Freelancing",
+  "product_type": "guide",
+  "price_usd": 20,
+  "trend_score": 85,
+  "content_file": "content.md",
+  "file_format": "MD"
+}
