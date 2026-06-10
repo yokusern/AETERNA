@@ -1318,5 +1318,35 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/social_prompts_1778936030/social_prompts_1778936030.zip",
     "registered_at": "2026-06-08T03:45:24.973026",
     "pinterest_pinned": false
+  },
+  "startup_docs_1778936025": {
+    "gumroad_product_id": "moYoCkHBcHgfvzK6vvWAZw==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/hmgkmv",
+    "name": "Startup Document Pack (SOP + Proposal + Invoice)",
+    "price": 22,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/startup_docs_1778936025/startup_docs_1778936025.zip",
+    "registered_at": "2026-06-10T03:31:19.741314",
+    "pinterest_pinned": false
+  },
+  "student_os_1778936026": {
+    "gumroad_product_id": "9MbU9-rVfAIFkXjQNNkYIw==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/cwosc",
+    "name": "Student OS — Complete Study System",
+    "price": 17,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/student_os_1778936026/student_os_1778936026.zip",
+    "registered_at": "2026-06-10T03:31:23.140631",
+    "pinterest_pinned": false
+  },
+  "student_os_2026_1778937041": {
+    "gumroad_product_id": "fkA4ISlROU_nukD0RhUvLQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/cgoxax",
+    "name": "Student OS 2026 — Notion Study System for Academic Success",
+    "price": 17,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/student_os_2026_1778937041/student_os_2026_1778937041.zip",
+    "registered_at": "2026-06-10T03:31:26.260073",
+    "pinterest_pinned": false
   }
 }
