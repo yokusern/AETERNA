@@ -1358,5 +1358,35 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781149372/product_1781149372.zip",
     "registered_at": "2026-06-11T03:43:03.839467",
     "pinterest_pinned": false
+  },
+  "product_1781235756": {
+    "gumroad_product_id": "ICNbOSY2YO3AFxugYhFz9g==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/yxthso",
+    "name": "Practical Notion Templates Handbook",
+    "price": 21,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781235756/product_1781235756.zip",
+    "registered_at": "2026-06-12T03:42:51.859360",
+    "pinterest_pinned": false
+  },
+  "product_1781235764": {
+    "gumroad_product_id": "JPeXhWb5B82eh2cMsMJ0eA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/weofz",
+    "name": "Quick Start Midjourney Prompts",
+    "price": 16,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781235764/product_1781235764.zip",
+    "registered_at": "2026-06-12T03:42:55.190423",
+    "pinterest_pinned": false
+  },
+  "product_1781235766": {
+    "gumroad_product_id": "5MnGKjlRWkOWB30dtG1avw==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/lxqffz",
+    "name": "Practical Social Media Templates Handbook",
+    "price": 22,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781235766/product_1781235766.zip",
+    "registered_at": "2026-06-12T03:42:58.391053",
+    "pinterest_pinned": false
   }
 }
