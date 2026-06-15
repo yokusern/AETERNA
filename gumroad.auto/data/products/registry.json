@@ -1438,5 +1438,15 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781408886/product_1781408886.zip",
     "registered_at": "2026-06-14T03:48:14.639890",
     "pinterest_pinned": false
+  },
+  "product_1781496164": {
+    "gumroad_product_id": "fFCZfbWwhSlUkDH2SOwMow==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/uxxep",
+    "name": "Data Analysis Essentials",
+    "price": 19,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781496164/product_1781496164.zip",
+    "registered_at": "2026-06-15T04:02:53.302927",
+    "pinterest_pinned": false
   }
 }
