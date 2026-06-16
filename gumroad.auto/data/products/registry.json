@@ -1448,5 +1448,35 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781496164/product_1781496164.zip",
     "registered_at": "2026-06-15T04:02:53.302927",
     "pinterest_pinned": false
+  },
+  "product_1781581986": {
+    "gumroad_product_id": "ShfvLJ2jHfAg4qSWPWZ0EA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/llsowv",
+    "name": "Complete ChatGPT Prompts Guide",
+    "price": 17,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781581986/product_1781581986.zip",
+    "registered_at": "2026-06-16T03:53:19.899489",
+    "pinterest_pinned": false
+  },
+  "product_1781581993": {
+    "gumroad_product_id": "qzwkQIv-MXl0ObzTrHGX5A==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/lkrtj",
+    "name": "Interactive Tools for Beginners",
+    "price": 19,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781581993/product_1781581993.zip",
+    "registered_at": "2026-06-16T03:53:22.509145",
+    "pinterest_pinned": false
+  },
+  "product_1781581996": {
+    "gumroad_product_id": "bc48JvR-THcEKQug1B2kCA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/ssgvkz",
+    "name": "Master Python Automation",
+    "price": 19,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781581996/product_1781581996.zip",
+    "registered_at": "2026-06-16T03:53:25.002532",
+    "pinterest_pinned": false
   }
 }
