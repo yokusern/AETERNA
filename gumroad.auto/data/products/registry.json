@@ -1508,5 +1508,25 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781668497/product_1781668497.zip",
     "registered_at": "2026-06-17T03:55:09.160826",
     "pinterest_pinned": false
+  },
+  "product_1781754080": {
+    "gumroad_product_id": "g4zYnUOXo_Mcct0LkSuQZw==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/dpeud",
+    "name": "Practical Habit Tracker Handbook",
+    "price": 8,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781754080/product_1781754080.zip",
+    "registered_at": "2026-06-18T03:41:34.456863",
+    "pinterest_pinned": false
+  },
+  "product_1781754088": {
+    "gumroad_product_id": "uj1oKqxV5nKJP0QPLeC-NA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/dimkt",
+    "name": "Launch Checklists Blueprint",
+    "price": 16,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781754088/product_1781754088.zip",
+    "registered_at": "2026-06-18T03:41:37.086984",
+    "pinterest_pinned": false
   }
 }
