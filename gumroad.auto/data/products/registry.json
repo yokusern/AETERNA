@@ -1528,5 +1528,15 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781754088/product_1781754088.zip",
     "registered_at": "2026-06-18T03:41:37.086984",
     "pinterest_pinned": false
+  },
+  "product_1781841893": {
+    "gumroad_product_id": "GCnXTS6DdI1HvPmcsIuo6w==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/shmmto",
+    "name": "Complete Freelancing Guide",
+    "price": 20,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781841893/product_1781841893.zip",
+    "registered_at": "2026-06-19T04:04:58.094610",
+    "pinterest_pinned": false
   }
 }
