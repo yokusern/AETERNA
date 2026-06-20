@@ -1538,5 +1538,15 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781841893/product_1781841893.zip",
     "registered_at": "2026-06-19T04:04:58.094610",
     "pinterest_pinned": false
+  },
+  "product_1781926093": {
+    "gumroad_product_id": "Y2piEtz1kUCGwaEJ3JyygQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/eiwxbj",
+    "name": "Master Data Analysis",
+    "price": 25,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1781926093/product_1781926093.zip",
+    "registered_at": "2026-06-20T03:28:26.903494",
+    "pinterest_pinned": false
   }
 }
