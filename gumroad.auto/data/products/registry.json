@@ -1568,5 +1568,15 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782183471/product_1782183471.zip",
     "registered_at": "2026-06-23T02:57:58.362611",
     "pinterest_pinned": false
+  },
+  "product_1782269931": {
+    "gumroad_product_id": "o6oxwBGrn3qeoUudsO_PHg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/eatrtd",
+    "name": "Quick Start Prompt Engineering",
+    "price": 14,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782269931/product_1782269931.zip",
+    "registered_at": "2026-06-24T02:58:55.789274",
+    "pinterest_pinned": false
   }
 }
