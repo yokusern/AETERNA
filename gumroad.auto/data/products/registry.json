@@ -1578,5 +1578,15 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782269931/product_1782269931.zip",
     "registered_at": "2026-06-24T02:58:55.789274",
     "pinterest_pinned": false
+  },
+  "product_1782356304": {
+    "gumroad_product_id": "Rj9IY333xutYHaMBZGyqZg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/tbsrs",
+    "name": "Complete Python Automation Guide",
+    "price": 16,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782356304/product_1782356304.zip",
+    "registered_at": "2026-06-25T02:58:31.356667",
+    "pinterest_pinned": false
   }
 }
