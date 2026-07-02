@@ -1608,5 +1608,35 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782704397/product_1782704397.zip",
     "registered_at": "2026-06-29T03:40:02.339423",
     "pinterest_pinned": false
+  },
+  "product_1782962487": {
+    "gumroad_product_id": "de1aQImHCnTDAYqw1-_99g==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/vcdzaz",
+    "name": "Midjourney Prompts Made Easy",
+    "price": 15,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782962487/product_1782962487.zip",
+    "registered_at": "2026-07-02T03:21:42.742694",
+    "pinterest_pinned": false
+  },
+  "product_1782962490": {
+    "gumroad_product_id": "ysUH5fmJXDJClFmepfmq-g==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/olofyq",
+    "name": "Practical Freelancing Handbook",
+    "price": 20,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782962490/product_1782962490.zip",
+    "registered_at": "2026-07-02T03:21:45.807685",
+    "pinterest_pinned": false
+  },
+  "product_1782962496": {
+    "gumroad_product_id": "g6RXS3oGQkXnpcP03cR5pQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/rlkiz",
+    "name": "ChatGPT Prompts for Beginners",
+    "price": 23,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782962496/product_1782962496.zip",
+    "registered_at": "2026-07-02T03:21:48.856791",
+    "pinterest_pinned": false
   }
 }
