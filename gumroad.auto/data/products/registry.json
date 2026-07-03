@@ -1638,5 +1638,15 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1782962496/product_1782962496.zip",
     "registered_at": "2026-07-02T03:21:48.856791",
     "pinterest_pinned": false
+  },
+  "product_1783046657": {
+    "gumroad_product_id": "s-yHkRm8ZNfjZeckdDkShA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/ixpngi",
+    "name": "Practical Interactive Tools Handbook",
+    "price": 17,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783046657/product_1783046657.zip",
+    "registered_at": "2026-07-03T02:44:28.288056",
+    "pinterest_pinned": false
   }
 }
