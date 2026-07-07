@@ -1678,5 +1678,35 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783306663/product_1783306663.zip",
     "registered_at": "2026-07-06T02:57:49.542946",
     "pinterest_pinned": false
+  },
+  "product_1783392700": {
+    "gumroad_product_id": "RsGyUQo337h34iMrksysTA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/inntxn",
+    "name": "Study OS Essentials",
+    "price": 21,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783392700/product_1783392700.zip",
+    "registered_at": "2026-07-07T02:51:54.260826",
+    "pinterest_pinned": false
+  },
+  "product_1783392703": {
+    "gumroad_product_id": "awYWwY27yVw6iLnxi39eiw==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/audzm",
+    "name": "Master Side Hustle",
+    "price": 12,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783392703/product_1783392703.zip",
+    "registered_at": "2026-07-07T02:51:56.872790",
+    "pinterest_pinned": false
+  },
+  "product_1783392705": {
+    "gumroad_product_id": "HMBn_GTiQ9g2JZVecB8rwA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/jxnbba",
+    "name": "ChatGPT Prompts Blueprint",
+    "price": 22,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783392705/product_1783392705.zip",
+    "registered_at": "2026-07-07T02:51:59.724497",
+    "pinterest_pinned": false
   }
 }
