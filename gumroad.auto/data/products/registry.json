@@ -1718,5 +1718,15 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783651682/product_1783651682.zip",
     "registered_at": "2026-07-10T02:48:16.205737",
     "pinterest_pinned": false
+  },
+  "product_1783736805": {
+    "gumroad_product_id": "RKBCoktisnTv9be9J-cPNg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/lsjzn",
+    "name": "Interactive Tools Made Easy",
+    "price": 11,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783736805/product_1783736805.zip",
+    "registered_at": "2026-07-11T02:26:54.606714",
+    "pinterest_pinned": false
   }
 }

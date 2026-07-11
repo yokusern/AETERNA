@@ -1,0 +1,11 @@
+{
+  "product_id": "product_1783736810",
+  "name": "JavaScript for Beginners",
+  "category": "Programming",
+  "subcategory": "JavaScript",
+  "product_type": "script_pack",
+  "price_usd": 15,
+  "trend_score": 75,
+  "content_file": "content.md",
+  "file_format": "MD"
+}
