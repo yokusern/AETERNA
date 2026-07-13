@@ -1728,5 +1728,25 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783736805/product_1783736805.zip",
     "registered_at": "2026-07-11T02:26:54.606714",
     "pinterest_pinned": false
+  },
+  "product_1783909987": {
+    "gumroad_product_id": "eGu11xBSXgnp-C6M7VGpVg==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/ssbiz",
+    "name": "Master Prompt Engineering",
+    "price": 21,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783909987/product_1783909987.zip",
+    "registered_at": "2026-07-13T02:33:15.829641",
+    "pinterest_pinned": false
+  },
+  "product_1783909991": {
+    "gumroad_product_id": "P6X5-p4p9o72SJHQvHtGbQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/ubrxft",
+    "name": "Freelancing Blueprint",
+    "price": 17,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783909991/product_1783909991.zip",
+    "registered_at": "2026-07-13T02:33:18.485586",
+    "pinterest_pinned": false
   }
 }
