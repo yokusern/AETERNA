@@ -1748,5 +1748,25 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783909991/product_1783909991.zip",
     "registered_at": "2026-07-13T02:33:18.485586",
     "pinterest_pinned": false
+  },
+  "product_1783995139": {
+    "gumroad_product_id": "MXI3MUl7FFEtiQTM0r4X8g==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/dpcwt",
+    "name": "Freelance Templates Blueprint",
+    "price": 23,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783995139/product_1783995139.zip",
+    "registered_at": "2026-07-14T02:12:26.688067",
+    "pinterest_pinned": false
+  },
+  "product_1783995142": {
+    "gumroad_product_id": "Tb908kRF5qbFrJUVeUv3qQ==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/wolno",
+    "name": "Content Creator OS Essentials",
+    "price": 21,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1783995142/product_1783995142.zip",
+    "registered_at": "2026-07-14T02:12:29.797304",
+    "pinterest_pinned": false
   }
 }
