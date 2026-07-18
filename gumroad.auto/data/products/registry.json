@@ -1808,5 +1808,15 @@
     "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1784255198/product_1784255198.zip",
     "registered_at": "2026-07-17T02:26:43.384911",
     "pinterest_pinned": false
+  },
+  "product_1784340688": {
+    "gumroad_product_id": "O8ihsiJM_rHklGRIbh3WZA==",
+    "gumroad_url": "https://zenithal43.gumroad.com/l/vacak",
+    "name": "Email Marketing Essentials",
+    "price": 25,
+    "published": true,
+    "zip_path": "/home/runner/work/AETERNA/AETERNA/gumroad.auto/products/product_1784340688/product_1784340688.zip",
+    "registered_at": "2026-07-18T02:11:34.438840",
+    "pinterest_pinned": false
   }
 }
