@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Master SEO Strategy — Interactive Checklists</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#f8fafc;color:#1e293b;padding:20px}
+.container{max-width:800px;margin:0 auto}
+h1{font-size:1.8rem;font-weight:700;color:#1e293b;margin-bottom:4px}
+.subtitle{color:#64748b;margin-bottom:24px;font-size:.95rem}
+.section{background:white;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #e2e8f0}
+.section h2{font-size:1.1rem;font-weight:600;color:#7c3aed;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #f1f5f9}
+.item{display:flex;align-items:flex-start;gap:10px;padding:6px 0;cursor:pointer}
+.item input[type=checkbox]{width:16px;height:16px;margin-top:2px;accent-color:#7c3aed;cursor:pointer;flex-shrink:0}
+.item label{cursor:pointer;font-size:.9rem;color:#374151;transition:.2s;line-height:1.4}
+.item.done label{text-decoration:line-through;color:#94a3b8}
+.progress{background:#f1f5f9;border-radius:4px;height:6px;margin-bottom:16px}
+.progress-bar{background:linear-gradient(90deg,#7c3aed,#ec4899);height:100%;border-radius:4px;transition:.3s}
+.stats{display:flex;gap:16px;font-size:.8rem;color:#64748b;margin-bottom:12px}
+.btn-reset{background:#fee2e2;color:#dc2626;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:.8rem;margin-left:auto}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>✅ Master SEO Strategy</h1>
+<p class="subtitle">Interactive checklist — progress saved in your browser</p>
+<div id="app"></div>
+</div>
+<script>
+const lists=[
+  {title:"🚀 Business Launch (50 items)",key:"launch",items:["Choose business structure","Register business name","Get EIN / Tax ID","Open business bank account","Get business insurance","Create operating agreement","Open business credit card","Set up accounting software","Define pricing model","Create invoice template","Set up payment processing","Set startup budget","Buy domain name","Set up professional email","Build website","Set up Google Business Profile","Create LinkedIn page","Set up social accounts","Create email list","Design brand colors & logo","Define core offer","Write offer description (100 words)","Set pricing after research","Create sales page","Build onboarding process","Create service contract template","Define refund policy","Build FAQ document","Get 3 beta clients","Identify top 3 acquisition channels","Create lead magnet","Write 5 email templates","Set up CRM","Define referral program","Plan 30-day content calendar","Reach out to 50 warm contacts","List on relevant directories","Join 3 niche communities","Partner with complementary businesses","Create SOPs for core processes","Set up project management tool","Define communication channels","Set working hours","Set up automated backups","Create password manager","Set weekly review habit","Track key metrics weekly","Apply for business grants","Get business mentor","Celebrate your launch!"]},
+  {title:"🌐 Website Launch (20 items)",key:"website",items:["Define website goal","Map site structure","Write all copy first","Set up Google Analytics 4","Install SSL certificate","Test on mobile","Test page load speed","Research 10 target keywords","Write meta titles for all pages","Write meta descriptions","Add alt text to images","Create XML sitemap","Test all forms","Homepage: clear headline","Homepage: social proof","Homepage: CTA above fold","Privacy policy page","Terms of service page","404 page set up","Backup system in place"]},
+  {title:"📱 Content Marketing (20 items)",key:"content",items:["Define content goal","Choose 2-3 primary channels","Research top 20 content topics","Create 12-week content calendar","Define content pillars","Batch create 4+ pieces ahead","Create design templates","Set up brand hashtag list","Write 10 headlines, pick best","Add hook in first line","Include CTA in every piece","Repurpose content to 3 formats","Post at optimal times","Email newsletter weekly","Track reach & engagement weekly","Identify top performing content","A/B test headlines","Update old top content","Engage 30 min after posting","DM new followers who engage"]},
+  {title:"💼 Daily Productivity (15 items)",key:"daily",items:["Identify #1 task (MIT)","Block 90-min deep work","Close distracting tabs","Phone on Do Not Disturb","No social media first 30 min","Use Pomodoro timer (25/5)","Single-task only","Note distractions, don't follow","Complete or reschedule open tasks","Clear inbox to zero","Prep tomorrow's MIT","Note one win from today","Shut down ritual (close laptop)","Drink 8 glasses water","Get 7-8 hours sleep"]}
+];
+
+function save(){localStorage.setItem('cl',JSON.stringify(state));}
+const state=JSON.parse(localStorage.getItem('cl')||'{}');
+
+function renderAll(){
+  const app=document.getElementById('app'); app.innerHTML='';
+  lists.forEach(list=>{
+    const done=(state[list.key]||[]).length;
+    const pct=Math.round(done/list.items.length*100);
+    const div=document.createElement('div'); div.className='section';
+    div.innerHTML=`<h2>${list.title}</h2>
+    <div class="stats"><span>${done}/${list.items.length} done</span><span>${pct}% complete</span><button class="btn-reset" onclick="resetList('${list.key}')">Reset</button></div>
+    <div class="progress"><div class="progress-bar" style="width:${pct}%"></div></div>`;
+    list.items.forEach((item,i)=>{
+      const checked=(state[list.key]||[]).includes(i);
+      const row=document.createElement('div'); row.className='item'+(checked?' done':'');
+      row.innerHTML=`<input type="checkbox" id="${list.key}-${i}" ${checked?'checked':''}><label for="${list.key}-${i}">${item}</label>`;
+      row.querySelector('input').onchange=e=>{
+        if(!state[list.key]) state[list.key]=[];
+        if(e.target.checked) state[list.key].push(i);
+        else state[list.key]=state[list.key].filter(x=>x!==i);
+        save(); renderAll();
+      };
+      div.appendChild(row);
+    });
+    app.appendChild(div);
+  });
+}
+function resetList(key){if(confirm('Reset this checklist?')){state[key]=[];save();renderAll();}}
+renderAll();
+</script>
+</body>
+</html>
