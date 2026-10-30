@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Tools Made Easy</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f0f1a;color:#e2e8f0;min-height:100vh;padding:20px}
+  .header{text-align:center;padding:40px 20px 20px;}
+  h1{font-size:2rem;font-weight:700;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+  .subtitle{color:#94a3b8;font-size:1rem}
+  .card{background:#1e1e2e;border:1px solid #2d2d3f;border-radius:16px;padding:24px;margin:16px auto;max-width:700px}
+  .card h2{font-size:1.1rem;font-weight:600;color:#a78bfa;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+  label{display:block;font-size:.85rem;color:#94a3b8;margin-bottom:4px;margin-top:12px}
+  input,select{width:100%;padding:10px 14px;background:#2d2d3f;border:1px solid #3d3d5f;border-radius:8px;color:#e2e8f0;font-size:1rem;outline:none}
+  input:focus,select:focus{border-color:#7c3aed}
+  .btn{width:100%;padding:14px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:white;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;margin-top:20px;transition:.2s}
+  .btn:hover{opacity:.9;transform:translateY(-1px)}
+  .result{background:#0d1117;border:1px solid #7c3aed33;border-radius:12px;padding:20px;margin-top:16px;display:none}
+  .result-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #2d2d3f}
+  .result-row:last-child{border:none}
+  .result-label{color:#94a3b8;font-size:.9rem}
+  .result-value{font-weight:700;color:#a78bfa;font-size:1rem}
+  .big-number{font-size:2.5rem;font-weight:800;text-align:center;background:linear-gradient(135deg,#22c55e,#16a34a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;padding:20px 0}
+  .tips{background:#1a1a2e;border-left:3px solid #7c3aed;padding:16px;border-radius:0 8px 8px 0;margin-top:12px}
+  .tips h3{color:#a78bfa;margin-bottom:10px;font-size:.95rem}
+  .tips li{color:#94a3b8;font-size:.875rem;margin:6px 0;padding-left:16px}
+  .tab-bar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+  .tab{padding:8px 16px;background:#2d2d3f;border:none;border-radius:8px;color:#94a3b8;cursor:pointer;font-size:.875rem;transition:.2s}
+  .tab.active{background:#7c3aed;color:white}
+  .tab-content{display:none}.tab-content.active{display:block}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>⚡ Interactive Tools Made Easy</h1>
+  <p class="subtitle">Powered by Interactive Tools intelligence — instant results</p>
+</div>
+
+<div class="card" style="max-width:700px;margin:0 auto">
+  <div class="tab-bar">
+    <button class="tab active" onclick="switchTab('roi')">ROI Calculator</button>
+    <button class="tab" onclick="switchTab('goal')">Goal Planner</button>
+    <button class="tab" onclick="switchTab('time')">Time Value</button>
+    <button class="tab" onclick="switchTab('habit')">Habit Tracker</button>
+  </div>
+
+  <!-- ROI Calculator -->
+  <div id="tab-roi" class="tab-content active">
+    <h2>📈 ROI Calculator</h2>
+    <label>Initial Investment ($)</label>
+    <input type="number" id="roi-invest" placeholder="e.g. 1000" value="1000">
+    <label>Expected Return ($)</label>
+    <input type="number" id="roi-return" placeholder="e.g. 1500" value="1500">
+    <label>Time Period (months)</label>
+    <input type="number" id="roi-months" placeholder="e.g. 12" value="12">
+    <button class="btn" onclick="calcROI()">Calculate ROI</button>
+    <div class="result" id="roi-result">
+      <div class="big-number" id="roi-pct"></div>
+      <div class="result-row"><span class="result-label">Net Profit</span><span class="result-value" id="roi-profit"></span></div>
+      <div class="result-row"><span class="result-label">Monthly Return</span><span class="result-value" id="roi-monthly"></span></div>
+      <div class="result-row"><span class="result-label">Annualized ROI</span><span class="result-value" id="roi-annual"></span></div>
+      <div class="tips">
+        <h3>💡 ROI Insights</h3>
+        <ul><li id="roi-tip1"></li><li id="roi-tip2"></li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Goal Planner -->
+  <div id="tab-goal" class="tab-content">
+    <h2>🎯 Goal Planner</h2>
+    <label>Goal ($)</label>
+    <input type="number" id="goal-target" placeholder="e.g. 10000" value="10000">
+    <label>Already saved ($)</label>
+    <input type="number" id="goal-saved" placeholder="e.g. 2000" value="2000">
+    <label>Monthly contribution ($)</label>
+    <input type="number" id="goal-monthly" placeholder="e.g. 500" value="500">
+    <button class="btn" onclick="calcGoal()">Calculate Timeline</button>
+    <div class="result" id="goal-result">
+      <div class="big-number" id="goal-months-display"></div>
+      <div class="result-row"><span class="result-label">Remaining needed</span><span class="result-value" id="goal-remaining"></span></div>
+      <div class="result-row"><span class="result-label">Target date</span><span class="result-value" id="goal-date"></span></div>
+      <div class="result-row"><span class="result-label">% Complete</span><span class="result-value" id="goal-pct"></span></div>
+    </div>
+  </div>
+
+  <!-- Time Value -->
+  <div id="tab-time" class="tab-content">
+    <h2>⏱️ Hourly Rate Calculator</h2>
+    <label>Desired annual income ($)</label>
+    <input type="number" id="tv-income" placeholder="e.g. 60000" value="60000">
+    <label>Hours worked per week</label>
+    <input type="number" id="tv-hours" placeholder="e.g. 40" value="40">
+    <label>Vacation weeks per year</label>
+    <input type="number" id="tv-vacation" placeholder="e.g. 2" value="2">
+    <button class="btn" onclick="calcTime()">Calculate</button>
+    <div class="result" id="time-result">
+      <div class="big-number" id="time-hourly"></div>
+      <div class="result-row"><span class="result-label">Daily rate (8h)</span><span class="result-value" id="time-daily"></span></div>
+      <div class="result-row"><span class="result-label">Weekly rate</span><span class="result-value" id="time-weekly"></span></div>
+      <div class="result-row"><span class="result-label">Monthly rate</span><span class="result-value" id="time-monthly"></span></div>
+    </div>
+  </div>
+
+  <!-- Habit Tracker -->
+  <div id="tab-habit" class="tab-content">
+    <h2>✅ 30-Day Habit Tracker</h2>
+    <p style="color:#94a3b8;font-size:.875rem;margin-bottom:16px">Click days to mark as complete. Data saved in browser.</p>
+    <label>Habit name</label>
+    <input type="text" id="habit-name" placeholder="e.g. Morning workout" value="Morning workout">
+    <div id="habit-grid" style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:16px"></div>
+    <div class="result" id="habit-result" style="display:block;margin-top:16px">
+      <div class="result-row"><span class="result-label">Streak</span><span class="result-value" id="habit-streak">0 days</span></div>
+      <div class="result-row"><span class="result-label">Completion rate</span><span class="result-value" id="habit-rate">0%</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+function switchTab(id) {
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+function fmt(n) { return '$'+n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function calcROI() {
+  const inv=+document.getElementById('roi-invest').value;
+  const ret=+document.getElementById('roi-return').value;
+  const mo=+document.getElementById('roi-months').value;
+  if(!inv||!ret||!mo) return;
+  const profit=ret-inv, pct=(profit/inv)*100, monthly=profit/mo, annual=((ret/inv)**(12/mo)-1)*100;
+  document.getElementById('roi-pct').textContent=pct.toFixed(1)+'% ROI';
+  document.getElementById('roi-profit').textContent=fmt(profit);
+  document.getElementById('roi-monthly').textContent=fmt(monthly)+'/mo';
+  document.getElementById('roi-annual').textContent=annual.toFixed(1)+'%';
+  document.getElementById('roi-tip1').textContent=pct>20?'Great return! Above market average (7-10%)':'Consider if this beats index fund returns (~10%/yr)';
+  document.getElementById('roi-tip2').textContent='Break-even in '+(inv/monthly).toFixed(1)+' months';
+  document.getElementById('roi-result').style.display='block';
+}
+function calcGoal() {
+  const target=+document.getElementById('goal-target').value;
+  const saved=+document.getElementById('goal-saved').value;
+  const monthly=+document.getElementById('goal-monthly').value;
+  const remaining=target-saved, months=Math.ceil(remaining/monthly);
+  const d=new Date(); d.setMonth(d.getMonth()+months);
+  document.getElementById('goal-remaining').textContent=fmt(remaining);
+  document.getElementById('goal-months-display').textContent=months+' months';
+  document.getElementById('goal-date').textContent=d.toLocaleDateString('en',{month:'long',year:'numeric'});
+  document.getElementById('goal-pct').textContent=(saved/target*100).toFixed(1)+'%';
+  document.getElementById('goal-result').style.display='block';
+}
+function calcTime() {
+  const income=+document.getElementById('tv-income').value;
+  const hours=+document.getElementById('tv-hours').value;
+  const vac=+document.getElementById('tv-vacation').value;
+  const weeks=52-vac, hourly=income/(weeks*hours), daily=hourly*8;
+  document.getElementById('time-hourly').textContent=fmt(hourly)+'/hr';
+  document.getElementById('time-daily').textContent=fmt(daily);
+  document.getElementById('time-weekly').textContent=fmt(hourly*hours);
+  document.getElementById('time-monthly').textContent=fmt(income/12);
+  document.getElementById('time-result').style.display='block';
+}
+// Habit tracker
+const state=JSON.parse(localStorage.getItem('habit')||'{}');
+function renderHabit() {
+  const g=document.getElementById('habit-grid'); g.innerHTML='';
+  let streak=0,completed=0;
+  for(let i=1;i<=30;i++) {
+    const done=state[i];
+    if(done) completed++;
+    const btn=document.createElement('button');
+    btn.textContent=i; btn.onclick=()=>{state[i]=!state[i];localStorage.setItem('habit',JSON.stringify(state));renderHabit();};
+    btn.style.cssText=`padding:10px;border:1px solid ${done?'#22c55e':'#2d2d3f'};background:${done?'#14532d':'#1e1e2e'};color:${done?'#86efac':'#94a3b8'};border-radius:8px;cursor:pointer;font-size:.875rem;`;
+    g.appendChild(btn);
+  }
+  for(let i=30;i>=1;i--) { if(state[i]) streak++; else break; }
+  document.getElementById('habit-streak').textContent=streak+' days';
+  document.getElementById('habit-rate').textContent=(completed/30*100).toFixed(0)+'%';
+}
+renderHabit();
+</script>
+</body>
+</html>
